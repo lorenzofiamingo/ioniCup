@@ -1,0 +1,15 @@
+{
+    [
+        {
+            "name": "Roberto",
+            "surname": "Schirripa",
+            "email": "eutimo@gmail.com",
+            "cell": "3298015551",
+            "number": "34",
+            "allstargameIds": [0, 1, 3],
+            "dateofbirth": "28/02/1999"
+            "sizeId": 0
+        }
+    ]
+}
+

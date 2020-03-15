@@ -1,0 +1,9 @@
+[
+    {
+        "id": 0,
+        "name": "ASD Fortitudo Bologna",
+        "cityId": 0,
+        "logo": "logo.png",
+        "teamsId": [0, 1, 2]
+    }
+]

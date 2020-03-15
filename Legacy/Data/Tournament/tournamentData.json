@@ -1,0 +1,11 @@
+[
+    {
+        "id": 0,
+        "name": "MyName",
+        "year": "2019",
+        "courtsId": [0, 1, 2, 3],
+        "teamsId": [0, 1, 2, 3, 4, 5, 6, 7],
+        "allstargamesId": [0, 1],
+        "calendarId": 0, 1, 2
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "id": 0,
+        "islive" : true,
+        "streamingLink": "https://www.youtube.com/lesfowfoer"
+        "courtId": 0,
+        "time": "5:23",
+        "sixth": "Secondo Tempo",
+        "teamA": {
+            "teamId": 0,
+            "points": "",
+            "partial": {
+                "first": "",
+                "second": "",
+                "third": "",
+                "fourth": "",
+                "fifth": "",
+                "sixth": "",
+                "overtime": ""
+            },
+            "playingplayersId": [0, 1, 2, 3],
+            "playerScores": {
+                0: "",
+                1: "",
+                2: "",
+            }
+        },
+        "teamB": {
+            "teamId": 0,
+            "points": "",
+            "partial": {
+                "first": "",
+                "second": "",
+                "third": "",
+                "fourth": "",
+                "fifth": "",
+                "sixth": "",
+                "overtime": ""
+            },
+            "playingplayersId": [0, 1, 2, 3],
+            "playerScores": {
+                0: "",
+                1: "",
+                2: "",
+            }
+        }
+    }
+]

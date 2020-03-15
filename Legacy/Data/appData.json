@@ -1,0 +1,90 @@
+{
+    "allstargames": [
+        {
+            "name": "shootz",
+            "rules": "shoot how many as you can"
+        }
+    ],
+    "tournaments": [
+        {
+            "days": [
+                {
+                    "name": "Giovedì",
+                    "events": [
+                        {
+                            "time": "12:34",
+                            "event": "Finale",
+                            "matchId": 0
+                        }
+                    ]
+                }
+            ],
+            "courts": [
+                {
+                    "id": 0,
+                    "name": "Limone"
+                }
+            ],
+            "teams": [
+                {
+                    "id": 0,
+                    "name": "Eutimo",
+                    "city": "Locri",
+                    "color": "#FF0",
+                    "imageName": "eutimoLogo",
+                    "coaches": [
+                        {
+                            "name": "Roberto",
+                            "surname": "Schirripa"
+                        }
+                    ],
+                    "players": [
+                        {
+                            "name": "Roberto",
+                            "surname": "Schirripa",
+                            "number": "34",
+                            "allstargameIds": [
+                                0,
+                                1,
+                                3
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "stages": [
+                {
+                    "name": "Fase uno",
+                    "groups": [
+                        {
+                            "name": "Girone A",
+                            "formatId": "0",
+                            "rounds": [
+                                {
+                                    "matches": [
+                                        {
+                                            "id": "0",
+                                            "courtId": "0",
+                                            "teamAId": "0",
+                                            "teamBId": "0",
+                                            "pontsA": "0",
+                                            "pontsB": "0",
+                                            "time": "5:23",
+                                            "sixth": "Secondo Tempo",
+                                            "partialsA": [
+                                                "32"
+                                            ],
+                                            "partialsB": [
+                                                "32"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

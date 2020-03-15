@@ -1,0 +1,7 @@
+[
+    {
+        "id": 0,
+        "name": "Fase uno",
+        "matchesIds": [0, 1, 2]
+    }
+]

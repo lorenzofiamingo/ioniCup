@@ -1,0 +1,9 @@
+[
+    {
+        "id": 0,
+        "coulorId": 0,
+        "coachesId": [0, 1, 2],
+        "summonedplayersId" : [23, 89],
+        "notsummonedplayersId": [3, 9]
+    }
+]

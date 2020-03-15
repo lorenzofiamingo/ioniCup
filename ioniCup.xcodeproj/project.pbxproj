@@ -1,0 +1,2392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23E92C2A9E6C810078A16CF6 /* Pods_ioniCup_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B5B45A405642B4CB5A120B /* Pods_ioniCup_macOS.framework */; };
+		28F74F1ABC277862B883B483 /* Pods_ioniCup_padOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6623D7EC540996ACAA9D0D14 /* Pods_ioniCup_padOS.framework */; };
+		49AA22AA4D78C984BF5F8E6B /* Pods_ioniCup_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F290EBDB1967F9EE0E5935 /* Pods_ioniCup_iOS.framework */; };
+		A44C803A96A08AE1AB4F1EFB /* Pods_ioniCup_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D044FA7C29C24FF9AD17E736 /* Pods_ioniCup_tvOS.framework */; };
+		A610646223ACEE0A005E6FF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A610646123ACEE0A005E6FF0 /* GoogleService-Info.plist */; };
+		A610646423ACEEBE005E6FF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A610646323ACEEBE005E6FF0 /* GoogleService-Info.plist */; };
+		A610647123B0D666005E6FF0 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610647023B0D666005E6FF0 /* Tab.swift */; };
+		A610647623B0DCD9005E6FF0 /* StageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610647523B0DCD9005E6FF0 /* StageCard.swift */; };
+		A610647923B0DD1A005E6FF0 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610647823B0DD1A005E6FF0 /* NavigationButton.swift */; };
+		A610647B23B1116C005E6FF0 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610647A23B1116C005E6FF0 /* Stage.swift */; };
+		A610647D23B118F5005E6FF0 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610647C23B118F5005E6FF0 /* Tournament.swift */; };
+		A610647E23B1190C005E6FF0 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610647A23B1116C005E6FF0 /* Stage.swift */; };
+		A610647F23B1190C005E6FF0 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610647A23B1116C005E6FF0 /* Stage.swift */; };
+		A610648023B1190D005E6FF0 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610647A23B1116C005E6FF0 /* Stage.swift */; };
+		A610648123B11910005E6FF0 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610647C23B118F5005E6FF0 /* Tournament.swift */; };
+		A610648223B11910005E6FF0 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610647C23B118F5005E6FF0 /* Tournament.swift */; };
+		A610648323B11911005E6FF0 /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610647C23B118F5005E6FF0 /* Tournament.swift */; };
+		A610648D23B15E5C005E6FF0 /* StageNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610648C23B15E5C005E6FF0 /* StageNav.swift */; };
+		A610649023B2662E005E6FF0 /* GroupNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610648F23B2662D005E6FF0 /* GroupNav.swift */; };
+		A610649B23B52772005E6FF0 /* AttachmentSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F723ABB27500391A80 /* AttachmentSnipView.swift */; };
+		A610649C23B527A3005E6FF0 /* CompletedmatchSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7EE23ABB27500391A80 /* CompletedmatchSnipView.swift */; };
+		A610649D23B527A6005E6FF0 /* MatchTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F023ABB27500391A80 /* MatchTeamView.swift */; };
+		A610649E23B527AA005E6FF0 /* LeaderboardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FE23ABB27500391A80 /* LeaderboardDetail.swift */; };
+		A61064A023B527B0005E6FF0 /* MatchScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F223ABB27500391A80 /* MatchScoreView.swift */; };
+		A61064A123B527B3005E6FF0 /* AttachmentSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F723ABB27500391A80 /* AttachmentSnipView.swift */; };
+		A61A6FC523BA8B7000B5781A /* PalimpsestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A610647223B0DB99005E6FF0 /* PalimpsestView.swift */; };
+		A61A707823BD516E00B5781A /* CollectionLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A707723BD516E00B5781A /* CollectionLegacy.swift */; };
+		A61A707923BD516E00B5781A /* CollectionLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A707723BD516E00B5781A /* CollectionLegacy.swift */; };
+		A61A707A23BD516E00B5781A /* CollectionLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A707723BD516E00B5781A /* CollectionLegacy.swift */; };
+		A61A707B23BD516E00B5781A /* CollectionLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A707723BD516E00B5781A /* CollectionLegacy.swift */; };
+		A61A707D23BD517E00B5781A /* DocumentLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A707C23BD517E00B5781A /* DocumentLegacy.swift */; };
+		A61A707E23BD517E00B5781A /* DocumentLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A707C23BD517E00B5781A /* DocumentLegacy.swift */; };
+		A61A707F23BD517E00B5781A /* DocumentLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A707C23BD517E00B5781A /* DocumentLegacy.swift */; };
+		A61A708023BD517E00B5781A /* DocumentLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A707C23BD517E00B5781A /* DocumentLegacy.swift */; };
+		A61A708A23BD539A00B5781A /* JSONDecoder+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A708923BD539900B5781A /* JSONDecoder+decode.swift */; };
+		A61A708B23BD539A00B5781A /* JSONDecoder+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A708923BD539900B5781A /* JSONDecoder+decode.swift */; };
+		A61A708C23BD539A00B5781A /* JSONDecoder+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A708923BD539900B5781A /* JSONDecoder+decode.swift */; };
+		A61A708D23BD539A00B5781A /* JSONDecoder+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61A708923BD539900B5781A /* JSONDecoder+decode.swift */; };
+		A6861B6523B5388300A8E66F /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6861B6423B5388300A8E66F /* DB.swift */; };
+		A6861B6623B5388300A8E66F /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6861B6423B5388300A8E66F /* DB.swift */; };
+		A6861B6723B5388300A8E66F /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6861B6423B5388300A8E66F /* DB.swift */; };
+		A6861B6823B5388300A8E66F /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6861B6423B5388300A8E66F /* DB.swift */; };
+		A691843E24153A2500E20153 /* ImageOpener.swift in Sources */ = {isa = PBXBuildFile; fileRef = A691843D24153A2400E20153 /* ImageOpener.swift */; };
+		A69184412415D4D500E20153 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = A69184402415D4D500E20153 /* URLImage */; };
+		A69184432415D53E00E20153 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = A69184422415D53E00E20153 /* URLImage */; };
+		A69184452415D57800E20153 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = A69184442415D57800E20153 /* URLImage */; };
+		A69184472415D58200E20153 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = A69184462415D58200E20153 /* URLImage */; };
+		A69184492415D99900E20153 /* TeamLogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69184482415D99900E20153 /* TeamLogoImage.swift */; };
+		A691844E2419A87500E20153 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A691844D2419A87500E20153 /* SDWebImageSwiftUI */; };
+		A69C645223BFCE3B00EA5EBC /* DetailWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69C645123BFCE3B00EA5EBC /* DetailWindowController.swift */; };
+		A69C67D023C5ED9A00EA5EBC /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69C67CF23C5ED9A00EA5EBC /* Document.swift */; };
+		A69C67D123C5EF0D00EA5EBC /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69C67CF23C5ED9A00EA5EBC /* Document.swift */; };
+		A69C67D223C5EF1300EA5EBC /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69C67CF23C5ED9A00EA5EBC /* Document.swift */; };
+		A69C67D323C5EF1400EA5EBC /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69C67CF23C5ED9A00EA5EBC /* Document.swift */; };
+		A69C67D523C6159800EA5EBC /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69C67D423C6159800EA5EBC /* Collection.swift */; };
+		A69C67D623C616EE00EA5EBC /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69C67D423C6159800EA5EBC /* Collection.swift */; };
+		A69C67D823C616F000EA5EBC /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69C67D423C6159800EA5EBC /* Collection.swift */; };
+		A69C67D923C616F000EA5EBC /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69C67D423C6159800EA5EBC /* Collection.swift */; };
+		A69C680123C7685800EA5EBC /* ColorPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69C680023C7685800EA5EBC /* ColorPanel.swift */; };
+		A69FE0462411224600B1E292 /* GroupCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FE0452411224600B1E292 /* GroupCard.swift */; };
+		A69FE048241128D300B1E292 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FE047241128D300B1E292 /* Group.swift */; };
+		A69FE049241128D300B1E292 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FE047241128D300B1E292 /* Group.swift */; };
+		A69FE04A241128D300B1E292 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FE047241128D300B1E292 /* Group.swift */; };
+		A69FE04B241128D300B1E292 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FE047241128D300B1E292 /* Group.swift */; };
+		A69FE04D241128E000B1E292 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FE04C241128E000B1E292 /* Round.swift */; };
+		A69FE04E241128E000B1E292 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FE04C241128E000B1E292 /* Round.swift */; };
+		A69FE04F241128E000B1E292 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FE04C241128E000B1E292 /* Round.swift */; };
+		A69FE050241128E000B1E292 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69FE04C241128E000B1E292 /* Round.swift */; };
+		A6C8E76D23ABAA0200391A80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E76C23ABAA0200391A80 /* AppDelegate.swift */; };
+		A6C8E76F23ABAA0200391A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E76E23ABAA0200391A80 /* ContentView.swift */; };
+		A6C8E77123ABAA0300391A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E77023ABAA0300391A80 /* Assets.xcassets */; };
+		A6C8E77423ABAA0300391A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E77323ABAA0300391A80 /* Preview Assets.xcassets */; };
+		A6C8E77723ABAA0300391A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E77523ABAA0300391A80 /* LaunchScreen.storyboard */; };
+		A6C8E78323ABAA1800391A80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E78223ABAA1800391A80 /* AppDelegate.swift */; };
+		A6C8E78523ABAA1800391A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E78423ABAA1800391A80 /* ContentView.swift */; };
+		A6C8E78723ABAA1800391A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E78623ABAA1800391A80 /* Assets.xcassets */; };
+		A6C8E78A23ABAA1800391A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E78923ABAA1800391A80 /* Preview Assets.xcassets */; };
+		A6C8E78D23ABAA1800391A80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E78B23ABAA1800391A80 /* Main.storyboard */; };
+		A6C8E7B123ABAA6600391A80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7B023ABAA6600391A80 /* AppDelegate.swift */; };
+		A6C8E7B323ABAA6600391A80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7B223ABAA6600391A80 /* SceneDelegate.swift */; };
+		A6C8E7B523ABAA6600391A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7B423ABAA6600391A80 /* ContentView.swift */; };
+		A6C8E7B723ABAA6700391A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E7B623ABAA6700391A80 /* Assets.xcassets */; };
+		A6C8E7BA23ABAA6700391A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E7B923ABAA6700391A80 /* Preview Assets.xcassets */; };
+		A6C8E7BD23ABAA6700391A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E7BB23ABAA6700391A80 /* LaunchScreen.storyboard */; };
+		A6C8E7D123ABB13800391A80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7D023ABB13800391A80 /* AppDelegate.swift */; };
+		A6C8E7D323ABB13800391A80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7D223ABB13800391A80 /* SceneDelegate.swift */; };
+		A6C8E7D523ABB13800391A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7D423ABB13800391A80 /* ContentView.swift */; };
+		A6C8E7D723ABB13A00391A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E7D623ABB13A00391A80 /* Assets.xcassets */; };
+		A6C8E7DA23ABB13A00391A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E7D923ABB13A00391A80 /* Preview Assets.xcassets */; };
+		A6C8E7DD23ABB13A00391A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E7DB23ABB13A00391A80 /* LaunchScreen.storyboard */; };
+		A6C8E81223ABB27500391A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E7E323ABB27500391A80 /* Assets.xcassets */; };
+		A6C8E81323ABB27500391A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E7E323ABB27500391A80 /* Assets.xcassets */; };
+		A6C8E81423ABB27500391A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E7E323ABB27500391A80 /* Assets.xcassets */; };
+		A6C8E81523ABB27500391A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E7E323ABB27500391A80 /* Assets.xcassets */; };
+		A6C8E81A23ABB27500391A80 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7E623ABB27500391A80 /* Match.swift */; };
+		A6C8E81B23ABB27500391A80 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7E623ABB27500391A80 /* Match.swift */; };
+		A6C8E81C23ABB27500391A80 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7E623ABB27500391A80 /* Match.swift */; };
+		A6C8E81D23ABB27500391A80 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7E623ABB27500391A80 /* Match.swift */; };
+		A6C8E82223ABB27500391A80 /* Color+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7EA23ABB27500391A80 /* Color+random.swift */; };
+		A6C8E82323ABB27500391A80 /* Color+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7EA23ABB27500391A80 /* Color+random.swift */; };
+		A6C8E82423ABB27500391A80 /* Color+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7EA23ABB27500391A80 /* Color+random.swift */; };
+		A6C8E82523ABB27500391A80 /* Color+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7EA23ABB27500391A80 /* Color+random.swift */; };
+		A6C8E82623ABB27500391A80 /* MatchLCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7EC23ABB27500391A80 /* MatchLCard.swift */; };
+		A6C8E82723ABB27500391A80 /* MatchLCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7EC23ABB27500391A80 /* MatchLCard.swift */; };
+		A6C8E82823ABB27500391A80 /* MatchLCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7EC23ABB27500391A80 /* MatchLCard.swift */; };
+		A6C8E82923ABB27500391A80 /* MatchLCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7EC23ABB27500391A80 /* MatchLCard.swift */; };
+		A6C8E82A23ABB27500391A80 /* MatchSCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7ED23ABB27500391A80 /* MatchSCard.swift */; };
+		A6C8E82B23ABB27500391A80 /* MatchSCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7ED23ABB27500391A80 /* MatchSCard.swift */; };
+		A6C8E82C23ABB27500391A80 /* MatchSCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7ED23ABB27500391A80 /* MatchSCard.swift */; };
+		A6C8E82D23ABB27500391A80 /* MatchSCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7ED23ABB27500391A80 /* MatchSCard.swift */; };
+		A6C8E82E23ABB27500391A80 /* CompletedmatchSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7EE23ABB27500391A80 /* CompletedmatchSnipView.swift */; };
+		A6C8E82F23ABB27500391A80 /* CompletedmatchSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7EE23ABB27500391A80 /* CompletedmatchSnipView.swift */; };
+		A6C8E83123ABB27500391A80 /* CompletedmatchSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7EE23ABB27500391A80 /* CompletedmatchSnipView.swift */; };
+		A6C8E83223ABB27500391A80 /* MatchTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F023ABB27500391A80 /* MatchTeamView.swift */; };
+		A6C8E83323ABB27500391A80 /* MatchTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F023ABB27500391A80 /* MatchTeamView.swift */; };
+		A6C8E83523ABB27500391A80 /* MatchTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F023ABB27500391A80 /* MatchTeamView.swift */; };
+		A6C8E83623ABB27500391A80 /* MatchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F123ABB27500391A80 /* MatchDetail.swift */; };
+		A6C8E83723ABB27500391A80 /* MatchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F123ABB27500391A80 /* MatchDetail.swift */; };
+		A6C8E83923ABB27500391A80 /* MatchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F123ABB27500391A80 /* MatchDetail.swift */; };
+		A6C8E83A23ABB27500391A80 /* MatchScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F223ABB27500391A80 /* MatchScoreView.swift */; };
+		A6C8E83B23ABB27500391A80 /* MatchScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F223ABB27500391A80 /* MatchScoreView.swift */; };
+		A6C8E83D23ABB27500391A80 /* MatchScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F223ABB27500391A80 /* MatchScoreView.swift */; };
+		A6C8E83E23ABB27500391A80 /* LivematchSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F323ABB27500391A80 /* LivematchSnipView.swift */; };
+		A6C8E83F23ABB27500391A80 /* LivematchSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F323ABB27500391A80 /* LivematchSnipView.swift */; };
+		A6C8E84023ABB27500391A80 /* LivematchSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F323ABB27500391A80 /* LivematchSnipView.swift */; };
+		A6C8E84123ABB27500391A80 /* LivematchSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F323ABB27500391A80 /* LivematchSnipView.swift */; };
+		A6C8E84223ABB27500391A80 /* MatchCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F423ABB27500391A80 /* MatchCollection.swift */; };
+		A6C8E84323ABB27500391A80 /* MatchCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F423ABB27500391A80 /* MatchCollection.swift */; };
+		A6C8E84523ABB27600391A80 /* MatchCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F423ABB27500391A80 /* MatchCollection.swift */; };
+		A6C8E84623ABB27600391A80 /* AttachmentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F623ABB27500391A80 /* AttachmentCard.swift */; };
+		A6C8E84723ABB27600391A80 /* AttachmentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F623ABB27500391A80 /* AttachmentCard.swift */; };
+		A6C8E84823ABB27600391A80 /* AttachmentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F623ABB27500391A80 /* AttachmentCard.swift */; };
+		A6C8E84923ABB27600391A80 /* AttachmentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F623ABB27500391A80 /* AttachmentCard.swift */; };
+		A6C8E84A23ABB27600391A80 /* AttachmentSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F723ABB27500391A80 /* AttachmentSnipView.swift */; };
+		A6C8E84D23ABB27600391A80 /* AttachmentSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F723ABB27500391A80 /* AttachmentSnipView.swift */; };
+		A6C8E84E23ABB27600391A80 /* AttachmentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F823ABB27500391A80 /* AttachmentDetail.swift */; };
+		A6C8E84F23ABB27600391A80 /* AttachmentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F823ABB27500391A80 /* AttachmentDetail.swift */; };
+		A6C8E85023ABB27600391A80 /* AttachmentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F823ABB27500391A80 /* AttachmentDetail.swift */; };
+		A6C8E85123ABB27600391A80 /* AttachmentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7F823ABB27500391A80 /* AttachmentDetail.swift */; };
+		A6C8E85223ABB27600391A80 /* LeaderboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FA23ABB27500391A80 /* LeaderboardCard.swift */; };
+		A6C8E85323ABB27600391A80 /* LeaderboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FA23ABB27500391A80 /* LeaderboardCard.swift */; };
+		A6C8E85423ABB27600391A80 /* LeaderboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FA23ABB27500391A80 /* LeaderboardCard.swift */; };
+		A6C8E85523ABB27600391A80 /* LeaderboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FA23ABB27500391A80 /* LeaderboardCard.swift */; };
+		A6C8E85623ABB27600391A80 /* LeaderboardSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FB23ABB27500391A80 /* LeaderboardSnipView.swift */; };
+		A6C8E85723ABB27600391A80 /* LeaderboardSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FB23ABB27500391A80 /* LeaderboardSnipView.swift */; };
+		A6C8E85823ABB27600391A80 /* LeaderboardSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FB23ABB27500391A80 /* LeaderboardSnipView.swift */; };
+		A6C8E85923ABB27600391A80 /* LeaderboardSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FB23ABB27500391A80 /* LeaderboardSnipView.swift */; };
+		A6C8E85A23ABB27600391A80 /* LeaderboardLCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FC23ABB27500391A80 /* LeaderboardLCard.swift */; };
+		A6C8E85B23ABB27600391A80 /* LeaderboardLCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FC23ABB27500391A80 /* LeaderboardLCard.swift */; };
+		A6C8E85C23ABB27600391A80 /* LeaderboardLCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FC23ABB27500391A80 /* LeaderboardLCard.swift */; };
+		A6C8E85D23ABB27600391A80 /* LeaderboardLCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FC23ABB27500391A80 /* LeaderboardLCard.swift */; };
+		A6C8E85E23ABB27600391A80 /* LeaderboardCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FD23ABB27500391A80 /* LeaderboardCollection.swift */; };
+		A6C8E85F23ABB27600391A80 /* LeaderboardCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FD23ABB27500391A80 /* LeaderboardCollection.swift */; };
+		A6C8E86123ABB27600391A80 /* LeaderboardCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FD23ABB27500391A80 /* LeaderboardCollection.swift */; };
+		A6C8E86223ABB27600391A80 /* LeaderboardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FE23ABB27500391A80 /* LeaderboardDetail.swift */; };
+		A6C8E86323ABB27600391A80 /* LeaderboardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FE23ABB27500391A80 /* LeaderboardDetail.swift */; };
+		A6C8E86523ABB27600391A80 /* LeaderboardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FE23ABB27500391A80 /* LeaderboardDetail.swift */; };
+		A6C8E86623ABB27600391A80 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80023ABB27500391A80 /* MapView.swift */; };
+		A6C8E86E23ABB27600391A80 /* TeamMCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80323ABB27500391A80 /* TeamMCard.swift */; };
+		A6C8E86F23ABB27600391A80 /* TeamMCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80323ABB27500391A80 /* TeamMCard.swift */; };
+		A6C8E87023ABB27600391A80 /* TeamMCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80323ABB27500391A80 /* TeamMCard.swift */; };
+		A6C8E87123ABB27600391A80 /* TeamMCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80323ABB27500391A80 /* TeamMCard.swift */; };
+		A6C8E87223ABB27600391A80 /* TeamSCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80423ABB27500391A80 /* TeamSCard.swift */; };
+		A6C8E87323ABB27600391A80 /* TeamSCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80423ABB27500391A80 /* TeamSCard.swift */; };
+		A6C8E87423ABB27600391A80 /* TeamSCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80423ABB27500391A80 /* TeamSCard.swift */; };
+		A6C8E87523ABB27600391A80 /* TeamSCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80423ABB27500391A80 /* TeamSCard.swift */; };
+		A6C8E87623ABB27600391A80 /* TeamSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80523ABB27500391A80 /* TeamSnipView.swift */; };
+		A6C8E87723ABB27600391A80 /* TeamSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80523ABB27500391A80 /* TeamSnipView.swift */; };
+		A6C8E87823ABB27600391A80 /* TeamSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80523ABB27500391A80 /* TeamSnipView.swift */; };
+		A6C8E87923ABB27600391A80 /* TeamSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80523ABB27500391A80 /* TeamSnipView.swift */; };
+		A6C8E87A23ABB27600391A80 /* TeamCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80623ABB27500391A80 /* TeamCollection.swift */; };
+		A6C8E87B23ABB27600391A80 /* TeamCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80623ABB27500391A80 /* TeamCollection.swift */; };
+		A6C8E87D23ABB27600391A80 /* TeamCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80623ABB27500391A80 /* TeamCollection.swift */; };
+		A6C8E87E23ABB27600391A80 /* TeamLCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80723ABB27500391A80 /* TeamLCard.swift */; };
+		A6C8E87F23ABB27600391A80 /* TeamLCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80723ABB27500391A80 /* TeamLCard.swift */; };
+		A6C8E88023ABB27600391A80 /* TeamLCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80723ABB27500391A80 /* TeamLCard.swift */; };
+		A6C8E88123ABB27600391A80 /* TeamLCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80723ABB27500391A80 /* TeamLCard.swift */; };
+		A6C8E88223ABB27600391A80 /* TeamDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80923ABB27500391A80 /* TeamDetail.swift */; };
+		A6C8E88323ABB27600391A80 /* TeamDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80923ABB27500391A80 /* TeamDetail.swift */; };
+		A6C8E88523ABB27600391A80 /* TeamDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80923ABB27500391A80 /* TeamDetail.swift */; };
+		A6C8E88623ABB27600391A80 /* ModalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80B23ABB27500391A80 /* ModalButton.swift */; };
+		A6C8E88A23ABB27600391A80 /* ModalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80C23ABB27500391A80 /* ModalLayer.swift */; };
+		A6C8E88E23ABB27600391A80 /* PhotoSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80E23ABB27500391A80 /* PhotoSnipView.swift */; };
+		A6C8E88F23ABB27600391A80 /* PhotoSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80E23ABB27500391A80 /* PhotoSnipView.swift */; };
+		A6C8E89123ABB27600391A80 /* PhotoSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80E23ABB27500391A80 /* PhotoSnipView.swift */; };
+		A6C8E89223ABB27600391A80 /* PhotoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80F23ABB27500391A80 /* PhotoCardView.swift */; };
+		A6C8E89323ABB27600391A80 /* PhotoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80F23ABB27500391A80 /* PhotoCardView.swift */; };
+		A6C8E89423ABB27600391A80 /* PhotoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80F23ABB27500391A80 /* PhotoCardView.swift */; };
+		A6C8E89523ABB27600391A80 /* PhotoCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80F23ABB27500391A80 /* PhotoCardView.swift */; };
+		A6C8E89623ABB27600391A80 /* AntennaAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E81123ABB27500391A80 /* AntennaAnimation.swift */; };
+		A6C8E89723ABB27600391A80 /* AntennaAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E81123ABB27500391A80 /* AntennaAnimation.swift */; };
+		A6C8E89823ABB27600391A80 /* AntennaAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E81123ABB27500391A80 /* AntennaAnimation.swift */; };
+		A6C8E89923ABB27600391A80 /* AntennaAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E81123ABB27500391A80 /* AntennaAnimation.swift */; };
+		A6C8E8B423ABB28200391A80 /* coachData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E89D23ABB28200391A80 /* coachData.json */; };
+		A6C8E8B523ABB28200391A80 /* coachData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E89D23ABB28200391A80 /* coachData.json */; };
+		A6C8E8B623ABB28200391A80 /* coachData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E89D23ABB28200391A80 /* coachData.json */; };
+		A6C8E8B723ABB28200391A80 /* coachData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E89D23ABB28200391A80 /* coachData.json */; };
+		A6C8E8B823ABB28200391A80 /* playerData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E89E23ABB28200391A80 /* playerData.json */; };
+		A6C8E8B923ABB28200391A80 /* playerData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E89E23ABB28200391A80 /* playerData.json */; };
+		A6C8E8BA23ABB28200391A80 /* playerData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E89E23ABB28200391A80 /* playerData.json */; };
+		A6C8E8BB23ABB28200391A80 /* playerData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E89E23ABB28200391A80 /* playerData.json */; };
+		A6C8E8BC23ABB28200391A80 /* teamData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E89F23ABB28200391A80 /* teamData.json */; };
+		A6C8E8BD23ABB28200391A80 /* teamData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E89F23ABB28200391A80 /* teamData.json */; };
+		A6C8E8BE23ABB28200391A80 /* teamData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E89F23ABB28200391A80 /* teamData.json */; };
+		A6C8E8BF23ABB28200391A80 /* teamData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E89F23ABB28200391A80 /* teamData.json */; };
+		A6C8E8C023ABB28200391A80 /* cityData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A023ABB28200391A80 /* cityData.json */; };
+		A6C8E8C123ABB28200391A80 /* cityData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A023ABB28200391A80 /* cityData.json */; };
+		A6C8E8C223ABB28200391A80 /* cityData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A023ABB28200391A80 /* cityData.json */; };
+		A6C8E8C323ABB28200391A80 /* cityData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A023ABB28200391A80 /* cityData.json */; };
+		A6C8E8C423ABB28200391A80 /* coulorData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A123ABB28200391A80 /* coulorData.json */; };
+		A6C8E8C523ABB28200391A80 /* coulorData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A123ABB28200391A80 /* coulorData.json */; };
+		A6C8E8C623ABB28200391A80 /* coulorData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A123ABB28200391A80 /* coulorData.json */; };
+		A6C8E8C723ABB28200391A80 /* coulorData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A123ABB28200391A80 /* coulorData.json */; };
+		A6C8E8C823ABB28200391A80 /* shirtsizeData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A223ABB28200391A80 /* shirtsizeData.json */; };
+		A6C8E8C923ABB28200391A80 /* shirtsizeData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A223ABB28200391A80 /* shirtsizeData.json */; };
+		A6C8E8CA23ABB28200391A80 /* shirtsizeData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A223ABB28200391A80 /* shirtsizeData.json */; };
+		A6C8E8CB23ABB28200391A80 /* shirtsizeData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A223ABB28200391A80 /* shirtsizeData.json */; };
+		A6C8E8CC23ABB28200391A80 /* clubData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A323ABB28200391A80 /* clubData.json */; };
+		A6C8E8CD23ABB28200391A80 /* clubData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A323ABB28200391A80 /* clubData.json */; };
+		A6C8E8CE23ABB28200391A80 /* clubData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A323ABB28200391A80 /* clubData.json */; };
+		A6C8E8CF23ABB28200391A80 /* clubData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A323ABB28200391A80 /* clubData.json */; };
+		A6C8E8D023ABB28200391A80 /* allstargameData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A523ABB28200391A80 /* allstargameData.json */; };
+		A6C8E8D123ABB28200391A80 /* allstargameData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A523ABB28200391A80 /* allstargameData.json */; };
+		A6C8E8D223ABB28200391A80 /* allstargameData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A523ABB28200391A80 /* allstargameData.json */; };
+		A6C8E8D323ABB28200391A80 /* allstargameData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A523ABB28200391A80 /* allstargameData.json */; };
+		A6C8E8D423ABB28200391A80 /* groupformatData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A823ABB28200391A80 /* groupformatData.json */; };
+		A6C8E8D523ABB28200391A80 /* groupformatData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A823ABB28200391A80 /* groupformatData.json */; };
+		A6C8E8D623ABB28200391A80 /* groupformatData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A823ABB28200391A80 /* groupformatData.json */; };
+		A6C8E8D723ABB28200391A80 /* groupformatData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A823ABB28200391A80 /* groupformatData.json */; };
+		A6C8E8D823ABB28200391A80 /* groupData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A923ABB28200391A80 /* groupData.json */; };
+		A6C8E8D923ABB28200391A80 /* groupData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A923ABB28200391A80 /* groupData.json */; };
+		A6C8E8DA23ABB28200391A80 /* groupData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A923ABB28200391A80 /* groupData.json */; };
+		A6C8E8DB23ABB28200391A80 /* groupData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8A923ABB28200391A80 /* groupData.json */; };
+		A6C8E8DC23ABB28200391A80 /* matchData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AA23ABB28200391A80 /* matchData.json */; };
+		A6C8E8DD23ABB28200391A80 /* matchData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AA23ABB28200391A80 /* matchData.json */; };
+		A6C8E8DE23ABB28200391A80 /* matchData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AA23ABB28200391A80 /* matchData.json */; };
+		A6C8E8DF23ABB28200391A80 /* matchData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AA23ABB28200391A80 /* matchData.json */; };
+		A6C8E8E023ABB28200391A80 /* roundData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AB23ABB28200391A80 /* roundData.json */; };
+		A6C8E8E123ABB28200391A80 /* roundData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AB23ABB28200391A80 /* roundData.json */; };
+		A6C8E8E223ABB28200391A80 /* roundData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AB23ABB28200391A80 /* roundData.json */; };
+		A6C8E8E323ABB28200391A80 /* roundData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AB23ABB28200391A80 /* roundData.json */; };
+		A6C8E8E423ABB28200391A80 /* stageData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AC23ABB28200391A80 /* stageData.json */; };
+		A6C8E8E523ABB28200391A80 /* stageData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AC23ABB28200391A80 /* stageData.json */; };
+		A6C8E8E623ABB28200391A80 /* stageData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AC23ABB28200391A80 /* stageData.json */; };
+		A6C8E8E723ABB28200391A80 /* stageData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AC23ABB28200391A80 /* stageData.json */; };
+		A6C8E8E823ABB28200391A80 /* calendarData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AD23ABB28200391A80 /* calendarData.json */; };
+		A6C8E8E923ABB28200391A80 /* calendarData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AD23ABB28200391A80 /* calendarData.json */; };
+		A6C8E8EA23ABB28200391A80 /* calendarData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AD23ABB28200391A80 /* calendarData.json */; };
+		A6C8E8EB23ABB28200391A80 /* calendarData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AD23ABB28200391A80 /* calendarData.json */; };
+		A6C8E8EC23ABB28200391A80 /* eventData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AE23ABB28200391A80 /* eventData.json */; };
+		A6C8E8ED23ABB28200391A80 /* eventData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AE23ABB28200391A80 /* eventData.json */; };
+		A6C8E8EE23ABB28200391A80 /* eventData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AE23ABB28200391A80 /* eventData.json */; };
+		A6C8E8EF23ABB28200391A80 /* eventData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AE23ABB28200391A80 /* eventData.json */; };
+		A6C8E8F023ABB28200391A80 /* dayData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AF23ABB28200391A80 /* dayData.json */; };
+		A6C8E8F123ABB28200391A80 /* dayData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AF23ABB28200391A80 /* dayData.json */; };
+		A6C8E8F223ABB28200391A80 /* dayData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AF23ABB28200391A80 /* dayData.json */; };
+		A6C8E8F323ABB28200391A80 /* dayData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8AF23ABB28200391A80 /* dayData.json */; };
+		A6C8E8F423ABB28200391A80 /* rulebookData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B023ABB28200391A80 /* rulebookData.json */; };
+		A6C8E8F523ABB28200391A80 /* rulebookData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B023ABB28200391A80 /* rulebookData.json */; };
+		A6C8E8F623ABB28200391A80 /* rulebookData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B023ABB28200391A80 /* rulebookData.json */; };
+		A6C8E8F723ABB28200391A80 /* rulebookData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B023ABB28200391A80 /* rulebookData.json */; };
+		A6C8E8F823ABB28200391A80 /* courtData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B123ABB28200391A80 /* courtData.json */; };
+		A6C8E8F923ABB28200391A80 /* courtData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B123ABB28200391A80 /* courtData.json */; };
+		A6C8E8FA23ABB28200391A80 /* courtData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B123ABB28200391A80 /* courtData.json */; };
+		A6C8E8FB23ABB28200391A80 /* courtData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B123ABB28200391A80 /* courtData.json */; };
+		A6C8E8FC23ABB28200391A80 /* tournamentData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B223ABB28200391A80 /* tournamentData.json */; };
+		A6C8E8FD23ABB28200391A80 /* tournamentData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B223ABB28200391A80 /* tournamentData.json */; };
+		A6C8E8FE23ABB28200391A80 /* tournamentData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B223ABB28200391A80 /* tournamentData.json */; };
+		A6C8E8FF23ABB28200391A80 /* tournamentData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B223ABB28200391A80 /* tournamentData.json */; };
+		A6C8E90023ABB28200391A80 /* appData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B323ABB28200391A80 /* appData.json */; };
+		A6C8E90123ABB28200391A80 /* appData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B323ABB28200391A80 /* appData.json */; };
+		A6C8E90223ABB28200391A80 /* appData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B323ABB28200391A80 /* appData.json */; };
+		A6C8E90323ABB28200391A80 /* appData.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C8E8B323ABB28200391A80 /* appData.json */; };
+		A6C8E90623ABBB9700391A80 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E90523ABBB9700391A80 /* HomeView.swift */; };
+		A6C8E90D23ABCD7500391A80 /* LeaderboardCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E7FD23ABB27500391A80 /* LeaderboardCollection.swift */; };
+		A6C8E90F23ABCD8B00391A80 /* TeamCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80623ABB27500391A80 /* TeamCollection.swift */; };
+		A6C8E91123ABCDF500391A80 /* PhotoSnipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80E23ABB27500391A80 /* PhotoSnipView.swift */; };
+		A6C8E91523ABD03F00391A80 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E91423ABD03F00391A80 /* MapView.swift */; };
+		A6C8E91823ABDF0A00391A80 /* ModalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E91723ABDF0A00391A80 /* ModalButton.swift */; };
+		A6C8E91A23ABDF1A00391A80 /* ModalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E91923ABDF1A00391A80 /* ModalLayer.swift */; };
+		A6C8E91D23ABF5DB00391A80 /* MatchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E91C23ABF5DB00391A80 /* MatchDetail.swift */; };
+		A6C8E91F23AC005700391A80 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E91E23AC005700391A80 /* HomeView.swift */; };
+		A6E6DE5324132B0700D154ED /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E6DE5224132B0700D154ED /* CloudKit.framework */; };
+		A6E6DE552413D97800D154ED /* DocumentModel+Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6DE542413D97800D154ED /* DocumentModel+Colorable.swift */; };
+		A6E6DE562413D97800D154ED /* DocumentModel+Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6DE542413D97800D154ED /* DocumentModel+Colorable.swift */; };
+		A6E6DE572413D97800D154ED /* DocumentModel+Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6DE542413D97800D154ED /* DocumentModel+Colorable.swift */; };
+		A6E6DE582413D97800D154ED /* DocumentModel+Colorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6DE542413D97800D154ED /* DocumentModel+Colorable.swift */; };
+		A6E6DE5C2413EC4600D154ED /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6DE5B2413EC4600D154ED /* TeamsView.swift */; };
+		A6E6DE5E2413EF2200D154ED /* TeamNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6DE5D2413EF2200D154ED /* TeamNav.swift */; };
+		A6E6DE602414135600D154ED /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6DE5F2414135600D154ED /* Team.swift */; };
+		A6E6DE612414135600D154ED /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6DE5F2414135600D154ED /* Team.swift */; };
+		A6E6DE622414135600D154ED /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6DE5F2414135600D154ED /* Team.swift */; };
+		A6E6DE632414135600D154ED /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6DE5F2414135600D154ED /* Team.swift */; };
+		A6E6DE6524142DA200D154ED /* TeamCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6DE6424142DA200D154ED /* TeamCard.swift */; };
+		A6E6DE672414316E00D154ED /* TeamDetailEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6DE662414316E00D154ED /* TeamDetailEditing.swift */; };
+		A6E6DE682414339800D154ED /* TeamDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8E80923ABB27500391A80 /* TeamDetail.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05591D8D52E4EAFB575CD907 /* Pods-ioniCup iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioniCup iOS.debug.xcconfig"; path = "Target Support Files/Pods-ioniCup iOS/Pods-ioniCup iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		41B5B45A405642B4CB5A120B /* Pods_ioniCup_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioniCup_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		428577F913CBEFCE42B27E0A /* Pods-ioniCup tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioniCup tvOS.release.xcconfig"; path = "Target Support Files/Pods-ioniCup tvOS/Pods-ioniCup tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		43F290EBDB1967F9EE0E5935 /* Pods_ioniCup_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioniCup_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51973119C40A8CCA49018BBC /* Pods-ioniCup iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioniCup iOS.release.xcconfig"; path = "Target Support Files/Pods-ioniCup iOS/Pods-ioniCup iOS.release.xcconfig"; sourceTree = "<group>"; };
+		6623D7EC540996ACAA9D0D14 /* Pods_ioniCup_padOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioniCup_padOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B04BCF0CAA1FD29569D573 /* Pods-ioniCup padOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioniCup padOS.release.xcconfig"; path = "Target Support Files/Pods-ioniCup padOS/Pods-ioniCup padOS.release.xcconfig"; sourceTree = "<group>"; };
+		A610646123ACEE0A005E6FF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A610646323ACEEBE005E6FF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A610647023B0D666005E6FF0 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		A610647223B0DB99005E6FF0 /* PalimpsestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalimpsestView.swift; sourceTree = "<group>"; };
+		A610647523B0DCD9005E6FF0 /* StageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageCard.swift; sourceTree = "<group>"; };
+		A610647823B0DD1A005E6FF0 /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
+		A610647A23B1116C005E6FF0 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		A610647C23B118F5005E6FF0 /* Tournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
+		A610648C23B15E5C005E6FF0 /* StageNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageNav.swift; sourceTree = "<group>"; };
+		A610648F23B2662D005E6FF0 /* GroupNav.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupNav.swift; sourceTree = "<group>"; };
+		A61A707723BD516E00B5781A /* CollectionLegacy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionLegacy.swift; sourceTree = "<group>"; };
+		A61A707C23BD517E00B5781A /* DocumentLegacy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentLegacy.swift; sourceTree = "<group>"; };
+		A61A708923BD539900B5781A /* JSONDecoder+decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+decode.swift"; sourceTree = "<group>"; };
+		A6861B6423B5388300A8E66F /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		A691843D24153A2400E20153 /* ImageOpener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOpener.swift; sourceTree = "<group>"; };
+		A69184482415D99900E20153 /* TeamLogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamLogoImage.swift; sourceTree = "<group>"; };
+		A69C645123BFCE3B00EA5EBC /* DetailWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWindowController.swift; sourceTree = "<group>"; };
+		A69C67CF23C5ED9A00EA5EBC /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		A69C67D423C6159800EA5EBC /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		A69C680023C7685800EA5EBC /* ColorPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPanel.swift; sourceTree = "<group>"; };
+		A69FE0452411224600B1E292 /* GroupCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCard.swift; sourceTree = "<group>"; };
+		A69FE047241128D300B1E292 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		A69FE04C241128E000B1E292 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		A6C8E76A23ABAA0200391A80 /* ioniCup tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ioniCup tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C8E76C23ABAA0200391A80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6C8E76E23ABAA0200391A80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6C8E77023ABAA0300391A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6C8E77323ABAA0300391A80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6C8E77623ABAA0300391A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6C8E77823ABAA0300391A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C8E78023ABAA1800391A80 /* ioniCup macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ioniCup macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C8E78223ABAA1800391A80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6C8E78423ABAA1800391A80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6C8E78623ABAA1800391A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6C8E78923ABAA1800391A80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6C8E78C23ABAA1800391A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6C8E78E23ABAA1800391A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C8E78F23ABAA1800391A80 /* ioniCup_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ioniCup_macOS.entitlements; sourceTree = "<group>"; };
+		A6C8E7AE23ABAA6600391A80 /* ioniCup padOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ioniCup padOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C8E7B023ABAA6600391A80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6C8E7B223ABAA6600391A80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A6C8E7B423ABAA6600391A80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6C8E7B623ABAA6700391A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6C8E7B923ABAA6700391A80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6C8E7BC23ABAA6700391A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6C8E7BE23ABAA6700391A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C8E7CE23ABB13800391A80 /* ioniCup iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ioniCup iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6C8E7D023ABB13800391A80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6C8E7D223ABB13800391A80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A6C8E7D423ABB13800391A80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6C8E7D623ABB13A00391A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6C8E7D923ABB13A00391A80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6C8E7DC23ABB13A00391A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6C8E7DE23ABB13A00391A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C8E7E323ABB27500391A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6C8E7E623ABB27500391A80 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		A6C8E7EA23ABB27500391A80 /* Color+random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+random.swift"; sourceTree = "<group>"; };
+		A6C8E7EC23ABB27500391A80 /* MatchLCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchLCard.swift; sourceTree = "<group>"; };
+		A6C8E7ED23ABB27500391A80 /* MatchSCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchSCard.swift; sourceTree = "<group>"; };
+		A6C8E7EE23ABB27500391A80 /* CompletedmatchSnipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedmatchSnipView.swift; sourceTree = "<group>"; };
+		A6C8E7F023ABB27500391A80 /* MatchTeamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchTeamView.swift; sourceTree = "<group>"; };
+		A6C8E7F123ABB27500391A80 /* MatchDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetail.swift; sourceTree = "<group>"; };
+		A6C8E7F223ABB27500391A80 /* MatchScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchScoreView.swift; sourceTree = "<group>"; };
+		A6C8E7F323ABB27500391A80 /* LivematchSnipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivematchSnipView.swift; sourceTree = "<group>"; };
+		A6C8E7F423ABB27500391A80 /* MatchCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchCollection.swift; sourceTree = "<group>"; };
+		A6C8E7F623ABB27500391A80 /* AttachmentCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentCard.swift; sourceTree = "<group>"; };
+		A6C8E7F723ABB27500391A80 /* AttachmentSnipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentSnipView.swift; sourceTree = "<group>"; };
+		A6C8E7F823ABB27500391A80 /* AttachmentDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentDetail.swift; sourceTree = "<group>"; };
+		A6C8E7FA23ABB27500391A80 /* LeaderboardCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardCard.swift; sourceTree = "<group>"; };
+		A6C8E7FB23ABB27500391A80 /* LeaderboardSnipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardSnipView.swift; sourceTree = "<group>"; };
+		A6C8E7FC23ABB27500391A80 /* LeaderboardLCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardLCard.swift; sourceTree = "<group>"; };
+		A6C8E7FD23ABB27500391A80 /* LeaderboardCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardCollection.swift; sourceTree = "<group>"; };
+		A6C8E7FE23ABB27500391A80 /* LeaderboardDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardDetail.swift; sourceTree = "<group>"; };
+		A6C8E80023ABB27500391A80 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A6C8E80323ABB27500391A80 /* TeamMCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamMCard.swift; sourceTree = "<group>"; };
+		A6C8E80423ABB27500391A80 /* TeamSCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamSCard.swift; sourceTree = "<group>"; };
+		A6C8E80523ABB27500391A80 /* TeamSnipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamSnipView.swift; sourceTree = "<group>"; };
+		A6C8E80623ABB27500391A80 /* TeamCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCollection.swift; sourceTree = "<group>"; };
+		A6C8E80723ABB27500391A80 /* TeamLCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamLCard.swift; sourceTree = "<group>"; };
+		A6C8E80923ABB27500391A80 /* TeamDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDetail.swift; sourceTree = "<group>"; };
+		A6C8E80B23ABB27500391A80 /* ModalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalButton.swift; sourceTree = "<group>"; };
+		A6C8E80C23ABB27500391A80 /* ModalLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalLayer.swift; sourceTree = "<group>"; };
+		A6C8E80E23ABB27500391A80 /* PhotoSnipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSnipView.swift; sourceTree = "<group>"; };
+		A6C8E80F23ABB27500391A80 /* PhotoCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCardView.swift; sourceTree = "<group>"; };
+		A6C8E81123ABB27500391A80 /* AntennaAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AntennaAnimation.swift; sourceTree = "<group>"; };
+		A6C8E89D23ABB28200391A80 /* coachData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coachData.json; sourceTree = "<group>"; };
+		A6C8E89E23ABB28200391A80 /* playerData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = playerData.json; sourceTree = "<group>"; };
+		A6C8E89F23ABB28200391A80 /* teamData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teamData.json; sourceTree = "<group>"; };
+		A6C8E8A023ABB28200391A80 /* cityData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cityData.json; sourceTree = "<group>"; };
+		A6C8E8A123ABB28200391A80 /* coulorData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coulorData.json; sourceTree = "<group>"; };
+		A6C8E8A223ABB28200391A80 /* shirtsizeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shirtsizeData.json; sourceTree = "<group>"; };
+		A6C8E8A323ABB28200391A80 /* clubData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clubData.json; sourceTree = "<group>"; };
+		A6C8E8A523ABB28200391A80 /* allstargameData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = allstargameData.json; sourceTree = "<group>"; };
+		A6C8E8A823ABB28200391A80 /* groupformatData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = groupformatData.json; sourceTree = "<group>"; };
+		A6C8E8A923ABB28200391A80 /* groupData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = groupData.json; sourceTree = "<group>"; };
+		A6C8E8AA23ABB28200391A80 /* matchData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = matchData.json; sourceTree = "<group>"; };
+		A6C8E8AB23ABB28200391A80 /* roundData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = roundData.json; sourceTree = "<group>"; };
+		A6C8E8AC23ABB28200391A80 /* stageData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stageData.json; sourceTree = "<group>"; };
+		A6C8E8AD23ABB28200391A80 /* calendarData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = calendarData.json; sourceTree = "<group>"; };
+		A6C8E8AE23ABB28200391A80 /* eventData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = eventData.json; sourceTree = "<group>"; };
+		A6C8E8AF23ABB28200391A80 /* dayData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dayData.json; sourceTree = "<group>"; };
+		A6C8E8B023ABB28200391A80 /* rulebookData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rulebookData.json; sourceTree = "<group>"; };
+		A6C8E8B123ABB28200391A80 /* courtData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = courtData.json; sourceTree = "<group>"; };
+		A6C8E8B223ABB28200391A80 /* tournamentData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tournamentData.json; sourceTree = "<group>"; };
+		A6C8E8B323ABB28200391A80 /* appData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = appData.json; sourceTree = "<group>"; };
+		A6C8E90523ABBB9700391A80 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = "ionicup iOS/View/HomeView.swift"; sourceTree = SOURCE_ROOT; };
+		A6C8E91423ABD03F00391A80 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A6C8E91723ABDF0A00391A80 /* ModalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalButton.swift; sourceTree = "<group>"; };
+		A6C8E91923ABDF1A00391A80 /* ModalLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLayer.swift; sourceTree = "<group>"; };
+		A6C8E91C23ABF5DB00391A80 /* MatchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetail.swift; sourceTree = "<group>"; };
+		A6C8E91E23AC005700391A80 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A6E6DE5124132AE300D154ED /* ioniCup iOSDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ioniCup iOSDebug.entitlements"; sourceTree = "<group>"; };
+		A6E6DE5224132B0700D154ED /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		A6E6DE542413D97800D154ED /* DocumentModel+Colorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DocumentModel+Colorable.swift"; sourceTree = "<group>"; };
+		A6E6DE5B2413EC4600D154ED /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		A6E6DE5D2413EF2200D154ED /* TeamNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamNav.swift; sourceTree = "<group>"; };
+		A6E6DE5F2414135600D154ED /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		A6E6DE6424142DA200D154ED /* TeamCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCard.swift; sourceTree = "<group>"; };
+		A6E6DE662414316E00D154ED /* TeamDetailEditing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailEditing.swift; sourceTree = "<group>"; };
+		BADF2E2698B089165B7F46E1 /* Pods-ioniCup padOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioniCup padOS.debug.xcconfig"; path = "Target Support Files/Pods-ioniCup padOS/Pods-ioniCup padOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C0C71250AFA6F32EA143D6C7 /* Pods-ioniCup tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioniCup tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ioniCup tvOS/Pods-ioniCup tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D044FA7C29C24FF9AD17E736 /* Pods_ioniCup_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ioniCup_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3B8D7CF50545BDFE5616FFD /* Pods-ioniCup macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioniCup macOS.debug.xcconfig"; path = "Target Support Files/Pods-ioniCup macOS/Pods-ioniCup macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F07379946696E073BBAD196A /* Pods-ioniCup macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ioniCup macOS.release.xcconfig"; path = "Target Support Files/Pods-ioniCup macOS/Pods-ioniCup macOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6C8E76723ABAA0200391A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69184432415D53E00E20153 /* URLImage in Frameworks */,
+				A44C803A96A08AE1AB4F1EFB /* Pods_ioniCup_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C8E77D23ABAA1800391A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A691844E2419A87500E20153 /* SDWebImageSwiftUI in Frameworks */,
+				A69184452415D57800E20153 /* URLImage in Frameworks */,
+				23E92C2A9E6C810078A16CF6 /* Pods_ioniCup_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C8E7AB23ABAA6600391A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69184472415D58200E20153 /* URLImage in Frameworks */,
+				28F74F1ABC277862B883B483 /* Pods_ioniCup_padOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C8E7CB23ABB13800391A80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49AA22AA4D78C984BF5F8E6B /* Pods_ioniCup_iOS.framework in Frameworks */,
+				A69184412415D4D500E20153 /* URLImage in Frameworks */,
+				A6E6DE5324132B0700D154ED /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		620232B23642149F73916B52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6DE5224132B0700D154ED /* CloudKit.framework */,
+				43F290EBDB1967F9EE0E5935 /* Pods_ioniCup_iOS.framework */,
+				41B5B45A405642B4CB5A120B /* Pods_ioniCup_macOS.framework */,
+				6623D7EC540996ACAA9D0D14 /* Pods_ioniCup_padOS.framework */,
+				D044FA7C29C24FF9AD17E736 /* Pods_ioniCup_tvOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A610646D23B0D173005E6FF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A610647023B0D666005E6FF0 /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A610647423B0DCA3005E6FF0 /* Palimpsest */ = {
+			isa = PBXGroup;
+			children = (
+				A6D59DEC23E977F3002393F7 /* Stage */,
+				A610647223B0DB99005E6FF0 /* PalimpsestView.swift */,
+				A69C680023C7685800EA5EBC /* ColorPanel.swift */,
+				A69C645123BFCE3B00EA5EBC /* DetailWindowController.swift */,
+			);
+			path = Palimpsest;
+			sourceTree = "<group>";
+		};
+		A610647723B0DD00005E6FF0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A610647823B0DD1A005E6FF0 /* NavigationButton.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		A69FE044241121E600B1E292 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				A610648F23B2662D005E6FF0 /* GroupNav.swift */,
+				A69FE0452411224600B1E292 /* GroupCard.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
+		A6C8E6FD23ABA90E00391A80 = {
+			isa = PBXGroup;
+			children = (
+				A6C8E89A23ABB28200391A80 /* Legacy */,
+				A6C8E7E223ABB27500391A80 /* Common */,
+				A6C8E7CF23ABB13800391A80 /* ioniCup iOS */,
+				A6C8E76B23ABAA0200391A80 /* ioniCup tvOS */,
+				A6C8E78123ABAA1800391A80 /* ioniCup macOS */,
+				A6C8E7AF23ABAA6600391A80 /* ioniCup padOS */,
+				A6C8E70923ABA92400391A80 /* Products */,
+				FA8835AA5E7BB230D3889129 /* Pods */,
+				620232B23642149F73916B52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A6C8E70923ABA92400391A80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E76A23ABAA0200391A80 /* ioniCup tvOS.app */,
+				A6C8E78023ABAA1800391A80 /* ioniCup macOS.app */,
+				A6C8E7AE23ABAA6600391A80 /* ioniCup padOS.app */,
+				A6C8E7CE23ABB13800391A80 /* ioniCup iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6C8E76B23ABAA0200391A80 /* ioniCup tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E76C23ABAA0200391A80 /* AppDelegate.swift */,
+				A6C8E76E23ABAA0200391A80 /* ContentView.swift */,
+				A6C8E77023ABAA0300391A80 /* Assets.xcassets */,
+				A6C8E77523ABAA0300391A80 /* LaunchScreen.storyboard */,
+				A6C8E77823ABAA0300391A80 /* Info.plist */,
+				A6C8E77223ABAA0300391A80 /* Preview Content */,
+			);
+			path = "ioniCup tvOS";
+			sourceTree = "<group>";
+		};
+		A6C8E77223ABAA0300391A80 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E77323ABAA0300391A80 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6C8E78123ABAA1800391A80 /* ioniCup macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A610646D23B0D173005E6FF0 /* Model */,
+				A6C8E91223ABD01E00391A80 /* View */,
+				A6C8E78223ABAA1800391A80 /* AppDelegate.swift */,
+				A6C8E78423ABAA1800391A80 /* ContentView.swift */,
+				A6C8E78623ABAA1800391A80 /* Assets.xcassets */,
+				A6C8E78B23ABAA1800391A80 /* Main.storyboard */,
+				A6C8E78E23ABAA1800391A80 /* Info.plist */,
+				A6C8E78F23ABAA1800391A80 /* ioniCup_macOS.entitlements */,
+				A610646323ACEEBE005E6FF0 /* GoogleService-Info.plist */,
+				A6C8E78823ABAA1800391A80 /* Preview Content */,
+			);
+			path = "ioniCup macOS";
+			sourceTree = "<group>";
+		};
+		A6C8E78823ABAA1800391A80 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E78923ABAA1800391A80 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6C8E7AF23ABAA6600391A80 /* ioniCup padOS */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E7B023ABAA6600391A80 /* AppDelegate.swift */,
+				A6C8E7B223ABAA6600391A80 /* SceneDelegate.swift */,
+				A6C8E7B423ABAA6600391A80 /* ContentView.swift */,
+				A6C8E7B623ABAA6700391A80 /* Assets.xcassets */,
+				A6C8E7BB23ABAA6700391A80 /* LaunchScreen.storyboard */,
+				A6C8E7BE23ABAA6700391A80 /* Info.plist */,
+				A6C8E7B823ABAA6700391A80 /* Preview Content */,
+			);
+			path = "ioniCup padOS";
+			sourceTree = "<group>";
+		};
+		A6C8E7B823ABAA6700391A80 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E7B923ABAA6700391A80 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6C8E7CF23ABB13800391A80 /* ioniCup iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6DE5124132AE300D154ED /* ioniCup iOSDebug.entitlements */,
+				A6C8E90423ABBB7C00391A80 /* View */,
+				A6C8E7D023ABB13800391A80 /* AppDelegate.swift */,
+				A6C8E7D223ABB13800391A80 /* SceneDelegate.swift */,
+				A6C8E7D423ABB13800391A80 /* ContentView.swift */,
+				A6C8E7D623ABB13A00391A80 /* Assets.xcassets */,
+				A6C8E7DB23ABB13A00391A80 /* LaunchScreen.storyboard */,
+				A6C8E7DE23ABB13A00391A80 /* Info.plist */,
+				A610646123ACEE0A005E6FF0 /* GoogleService-Info.plist */,
+				A6C8E7D823ABB13A00391A80 /* Preview Content */,
+			);
+			path = "ioniCup iOS";
+			sourceTree = "<group>";
+		};
+		A6C8E7D823ABB13A00391A80 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E7D923ABB13A00391A80 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6C8E7E223ABB27500391A80 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E7E323ABB27500391A80 /* Assets.xcassets */,
+				A6C8E7E423ABB27500391A80 /* Model */,
+				A6C8E7E923ABB27500391A80 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A6C8E7E423ABB27500391A80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A61A708923BD539900B5781A /* JSONDecoder+decode.swift */,
+				A6E6DE542413D97800D154ED /* DocumentModel+Colorable.swift */,
+				A6861B6423B5388300A8E66F /* DB.swift */,
+				A69C67CF23C5ED9A00EA5EBC /* Document.swift */,
+				A69C67D423C6159800EA5EBC /* Collection.swift */,
+				A6C8E7E623ABB27500391A80 /* Match.swift */,
+				A610647C23B118F5005E6FF0 /* Tournament.swift */,
+				A610647A23B1116C005E6FF0 /* Stage.swift */,
+				A69FE047241128D300B1E292 /* Group.swift */,
+				A6E6DE5F2414135600D154ED /* Team.swift */,
+				A69FE04C241128E000B1E292 /* Round.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6C8E7E923ABB27500391A80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E7EA23ABB27500391A80 /* Color+random.swift */,
+				A6C8E7EB23ABB27500391A80 /* Match */,
+				A6C8E7F523ABB27500391A80 /* Attachment */,
+				A6C8E7F923ABB27500391A80 /* Leaderboard */,
+				A6C8E80223ABB27500391A80 /* Team */,
+				A6C8E80D23ABB27500391A80 /* Photo */,
+				A6C8E81023ABB27500391A80 /* Animations */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6C8E7EB23ABB27500391A80 /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E7EC23ABB27500391A80 /* MatchLCard.swift */,
+				A6C8E7ED23ABB27500391A80 /* MatchSCard.swift */,
+				A6C8E7EE23ABB27500391A80 /* CompletedmatchSnipView.swift */,
+				A6C8E7EF23ABB27500391A80 /* Detail */,
+				A6C8E7F323ABB27500391A80 /* LivematchSnipView.swift */,
+				A6C8E7F423ABB27500391A80 /* MatchCollection.swift */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		A6C8E7EF23ABB27500391A80 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E7F023ABB27500391A80 /* MatchTeamView.swift */,
+				A6C8E7F123ABB27500391A80 /* MatchDetail.swift */,
+				A6C8E7F223ABB27500391A80 /* MatchScoreView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		A6C8E7F523ABB27500391A80 /* Attachment */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E7F623ABB27500391A80 /* AttachmentCard.swift */,
+				A6C8E7F723ABB27500391A80 /* AttachmentSnipView.swift */,
+				A6C8E7F823ABB27500391A80 /* AttachmentDetail.swift */,
+			);
+			path = Attachment;
+			sourceTree = "<group>";
+		};
+		A6C8E7F923ABB27500391A80 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E7FA23ABB27500391A80 /* LeaderboardCard.swift */,
+				A6C8E7FB23ABB27500391A80 /* LeaderboardSnipView.swift */,
+				A6C8E7FC23ABB27500391A80 /* LeaderboardLCard.swift */,
+				A6C8E7FD23ABB27500391A80 /* LeaderboardCollection.swift */,
+				A6C8E7FE23ABB27500391A80 /* LeaderboardDetail.swift */,
+			);
+			path = Leaderboard;
+			sourceTree = "<group>";
+		};
+		A6C8E7FF23ABB27500391A80 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E80023ABB27500391A80 /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A6C8E80223ABB27500391A80 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E80323ABB27500391A80 /* TeamMCard.swift */,
+				A6C8E80423ABB27500391A80 /* TeamSCard.swift */,
+				A6C8E80523ABB27500391A80 /* TeamSnipView.swift */,
+				A6C8E80623ABB27500391A80 /* TeamCollection.swift */,
+				A6C8E80723ABB27500391A80 /* TeamLCard.swift */,
+				A6C8E80823ABB27500391A80 /* Modal */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		A6C8E80823ABB27500391A80 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E80923ABB27500391A80 /* TeamDetail.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		A6C8E80A23ABB27500391A80 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E80B23ABB27500391A80 /* ModalButton.swift */,
+				A6C8E80C23ABB27500391A80 /* ModalLayer.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		A6C8E80D23ABB27500391A80 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E80E23ABB27500391A80 /* PhotoSnipView.swift */,
+				A6C8E80F23ABB27500391A80 /* PhotoCardView.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		A6C8E81023ABB27500391A80 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E81123ABB27500391A80 /* AntennaAnimation.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		A6C8E89A23ABB28200391A80 /* Legacy */ = {
+			isa = PBXGroup;
+			children = (
+				A61A707723BD516E00B5781A /* CollectionLegacy.swift */,
+				A61A707C23BD517E00B5781A /* DocumentLegacy.swift */,
+				A6C8E89B23ABB28200391A80 /* Data */,
+			);
+			path = Legacy;
+			sourceTree = "<group>";
+		};
+		A6C8E89B23ABB28200391A80 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E89C23ABB28200391A80 /* Club */,
+				A6C8E8A423ABB28200391A80 /* Tournament */,
+				A6C8E8B323ABB28200391A80 /* appData.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A6C8E89C23ABB28200391A80 /* Club */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E89D23ABB28200391A80 /* coachData.json */,
+				A6C8E89E23ABB28200391A80 /* playerData.json */,
+				A6C8E89F23ABB28200391A80 /* teamData.json */,
+				A6C8E8A023ABB28200391A80 /* cityData.json */,
+				A6C8E8A123ABB28200391A80 /* coulorData.json */,
+				A6C8E8A223ABB28200391A80 /* shirtsizeData.json */,
+				A6C8E8A323ABB28200391A80 /* clubData.json */,
+			);
+			path = Club;
+			sourceTree = "<group>";
+		};
+		A6C8E8A423ABB28200391A80 /* Tournament */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E8A523ABB28200391A80 /* allstargameData.json */,
+				A6C8E8A623ABB28200391A80 /* Calendar */,
+				A6C8E8B023ABB28200391A80 /* rulebookData.json */,
+				A6C8E8B123ABB28200391A80 /* courtData.json */,
+				A6C8E8B223ABB28200391A80 /* tournamentData.json */,
+			);
+			path = Tournament;
+			sourceTree = "<group>";
+		};
+		A6C8E8A623ABB28200391A80 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E8A723ABB28200391A80 /* Palimpsest */,
+				A6C8E8AD23ABB28200391A80 /* calendarData.json */,
+				A6C8E8AE23ABB28200391A80 /* eventData.json */,
+				A6C8E8AF23ABB28200391A80 /* dayData.json */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		A6C8E8A723ABB28200391A80 /* Palimpsest */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E8A823ABB28200391A80 /* groupformatData.json */,
+				A6C8E8A923ABB28200391A80 /* groupData.json */,
+				A6C8E8AA23ABB28200391A80 /* matchData.json */,
+				A6C8E8AB23ABB28200391A80 /* roundData.json */,
+				A6C8E8AC23ABB28200391A80 /* stageData.json */,
+			);
+			path = Palimpsest;
+			sourceTree = "<group>";
+		};
+		A6C8E90423ABBB7C00391A80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E80A23ABB27500391A80 /* Modal */,
+				A6C8E7FF23ABB27500391A80 /* Map */,
+				A6C8E90523ABBB9700391A80 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6C8E91223ABD01E00391A80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6DE592413EB9A00D154ED /* Home */,
+				A610647423B0DCA3005E6FF0 /* Palimpsest */,
+				A6E6DE5A2413EBA900D154ED /* Teams */,
+				A6C8E91B23ABF5C300391A80 /* Match */,
+				A610647723B0DD00005E6FF0 /* Navigation */,
+				A6C8E91623ABDEF500391A80 /* Modal */,
+				A6C8E91323ABD02700391A80 /* Map */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6C8E91323ABD02700391A80 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E91423ABD03F00391A80 /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A6C8E91623ABDEF500391A80 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E91723ABDF0A00391A80 /* ModalButton.swift */,
+				A6C8E91923ABDF1A00391A80 /* ModalLayer.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		A6C8E91B23ABF5C300391A80 /* Match */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E91C23ABF5DB00391A80 /* MatchDetail.swift */,
+			);
+			path = Match;
+			sourceTree = "<group>";
+		};
+		A6D59DEC23E977F3002393F7 /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+				A610648C23B15E5C005E6FF0 /* StageNav.swift */,
+				A610647523B0DCD9005E6FF0 /* StageCard.swift */,
+				A69FE044241121E600B1E292 /* Group */,
+			);
+			path = Stage;
+			sourceTree = "<group>";
+		};
+		A6E6DE592413EB9A00D154ED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A6C8E91E23AC005700391A80 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A6E6DE5A2413EBA900D154ED /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6DE5B2413EC4600D154ED /* TeamsView.swift */,
+				A6E6DE5D2413EF2200D154ED /* TeamNav.swift */,
+				A6E6DE6424142DA200D154ED /* TeamCard.swift */,
+				A6E6DE662414316E00D154ED /* TeamDetailEditing.swift */,
+				A69184482415D99900E20153 /* TeamLogoImage.swift */,
+				A691843D24153A2400E20153 /* ImageOpener.swift */,
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
+		FA8835AA5E7BB230D3889129 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05591D8D52E4EAFB575CD907 /* Pods-ioniCup iOS.debug.xcconfig */,
+				51973119C40A8CCA49018BBC /* Pods-ioniCup iOS.release.xcconfig */,
+				E3B8D7CF50545BDFE5616FFD /* Pods-ioniCup macOS.debug.xcconfig */,
+				F07379946696E073BBAD196A /* Pods-ioniCup macOS.release.xcconfig */,
+				BADF2E2698B089165B7F46E1 /* Pods-ioniCup padOS.debug.xcconfig */,
+				78B04BCF0CAA1FD29569D573 /* Pods-ioniCup padOS.release.xcconfig */,
+				C0C71250AFA6F32EA143D6C7 /* Pods-ioniCup tvOS.debug.xcconfig */,
+				428577F913CBEFCE42B27E0A /* Pods-ioniCup tvOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6C8E76923ABAA0200391A80 /* ioniCup tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6C8E77923ABAA0300391A80 /* Build configuration list for PBXNativeTarget "ioniCup tvOS" */;
+			buildPhases = (
+				222612936DA811043804E6B4 /* [CP] Check Pods Manifest.lock */,
+				A6C8E76623ABAA0200391A80 /* Sources */,
+				A6C8E76723ABAA0200391A80 /* Frameworks */,
+				A6C8E76823ABAA0200391A80 /* Resources */,
+				B1795DDE04EB07222D7E0676 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ioniCup tvOS";
+			packageProductDependencies = (
+				A69184422415D53E00E20153 /* URLImage */,
+			);
+			productName = "ioniCup tvOS";
+			productReference = A6C8E76A23ABAA0200391A80 /* ioniCup tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6C8E77F23ABAA1800391A80 /* ioniCup macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6C8E79023ABAA1800391A80 /* Build configuration list for PBXNativeTarget "ioniCup macOS" */;
+			buildPhases = (
+				6AD8D33AD125228CFD73CDAA /* [CP] Check Pods Manifest.lock */,
+				A6C8E77C23ABAA1800391A80 /* Sources */,
+				A6C8E77D23ABAA1800391A80 /* Frameworks */,
+				A6C8E77E23ABAA1800391A80 /* Resources */,
+				8D9DB74D143B5E6F0D9373C7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ioniCup macOS";
+			packageProductDependencies = (
+				A69184442415D57800E20153 /* URLImage */,
+				A691844D2419A87500E20153 /* SDWebImageSwiftUI */,
+			);
+			productName = "ioniCup macOS";
+			productReference = A6C8E78023ABAA1800391A80 /* ioniCup macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6C8E7AD23ABAA6600391A80 /* ioniCup padOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6C8E7BF23ABAA6700391A80 /* Build configuration list for PBXNativeTarget "ioniCup padOS" */;
+			buildPhases = (
+				F2176EE988DB5F134C08575D /* [CP] Check Pods Manifest.lock */,
+				A6C8E7AA23ABAA6600391A80 /* Sources */,
+				A6C8E7AB23ABAA6600391A80 /* Frameworks */,
+				A6C8E7AC23ABAA6600391A80 /* Resources */,
+				9440C433EA5F9CAE56A938BB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ioniCup padOS";
+			packageProductDependencies = (
+				A69184462415D58200E20153 /* URLImage */,
+			);
+			productName = "ioniCup padOS";
+			productReference = A6C8E7AE23ABAA6600391A80 /* ioniCup padOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6C8E7CD23ABB13800391A80 /* ioniCup iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6C8E7DF23ABB13A00391A80 /* Build configuration list for PBXNativeTarget "ioniCup iOS" */;
+			buildPhases = (
+				4B2311138EEBFAEFEECC1090 /* [CP] Check Pods Manifest.lock */,
+				A6C8E7CA23ABB13800391A80 /* Sources */,
+				A6C8E7CB23ABB13800391A80 /* Frameworks */,
+				A6C8E7CC23ABB13800391A80 /* Resources */,
+				7709452E01DC9E6B187B67C5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ioniCup iOS";
+			packageProductDependencies = (
+				A69184402415D4D500E20153 /* URLImage */,
+			);
+			productName = "ioniCup iOS";
+			productReference = A6C8E7CE23ABB13800391A80 /* ioniCup iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6C8E6FE23ABA90E00391A80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				TargetAttributes = {
+					A6C8E76923ABAA0200391A80 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A6C8E77F23ABAA1800391A80 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A6C8E7AD23ABAA6600391A80 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A6C8E7CD23ABB13800391A80 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A6C8E70123ABA90E00391A80 /* Build configuration list for PBXProject "ioniCup" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6C8E6FD23ABA90E00391A80;
+			packageReferences = (
+				A691843F2415D4D500E20153 /* XCRemoteSwiftPackageReference "url-image" */,
+				A691844C2419A87500E20153 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = A6C8E70923ABA92400391A80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6C8E7CD23ABB13800391A80 /* ioniCup iOS */,
+				A6C8E76923ABAA0200391A80 /* ioniCup tvOS */,
+				A6C8E77F23ABAA1800391A80 /* ioniCup macOS */,
+				A6C8E7AD23ABAA6600391A80 /* ioniCup padOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6C8E76823ABAA0200391A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C8E8C523ABB28200391A80 /* coulorData.json in Resources */,
+				A6C8E8D523ABB28200391A80 /* groupformatData.json in Resources */,
+				A6C8E8FD23ABB28200391A80 /* tournamentData.json in Resources */,
+				A6C8E8C123ABB28200391A80 /* cityData.json in Resources */,
+				A6C8E8ED23ABB28200391A80 /* eventData.json in Resources */,
+				A6C8E8B923ABB28200391A80 /* playerData.json in Resources */,
+				A6C8E8D123ABB28200391A80 /* allstargameData.json in Resources */,
+				A6C8E77723ABAA0300391A80 /* LaunchScreen.storyboard in Resources */,
+				A6C8E8DD23ABB28200391A80 /* matchData.json in Resources */,
+				A6C8E8F123ABB28200391A80 /* dayData.json in Resources */,
+				A6C8E8F923ABB28200391A80 /* courtData.json in Resources */,
+				A6C8E8E523ABB28200391A80 /* stageData.json in Resources */,
+				A6C8E8B523ABB28200391A80 /* coachData.json in Resources */,
+				A6C8E8E923ABB28200391A80 /* calendarData.json in Resources */,
+				A6C8E8E123ABB28200391A80 /* roundData.json in Resources */,
+				A6C8E8C923ABB28200391A80 /* shirtsizeData.json in Resources */,
+				A6C8E8BD23ABB28200391A80 /* teamData.json in Resources */,
+				A6C8E8D923ABB28200391A80 /* groupData.json in Resources */,
+				A6C8E8F523ABB28200391A80 /* rulebookData.json in Resources */,
+				A6C8E77423ABAA0300391A80 /* Preview Assets.xcassets in Resources */,
+				A6C8E81323ABB27500391A80 /* Assets.xcassets in Resources */,
+				A6C8E8CD23ABB28200391A80 /* clubData.json in Resources */,
+				A6C8E77123ABAA0300391A80 /* Assets.xcassets in Resources */,
+				A6C8E90123ABB28200391A80 /* appData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C8E77E23ABAA1800391A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C8E8C623ABB28200391A80 /* coulorData.json in Resources */,
+				A6C8E8D623ABB28200391A80 /* groupformatData.json in Resources */,
+				A610646423ACEEBE005E6FF0 /* GoogleService-Info.plist in Resources */,
+				A6C8E8FE23ABB28200391A80 /* tournamentData.json in Resources */,
+				A6C8E8C223ABB28200391A80 /* cityData.json in Resources */,
+				A6C8E8EE23ABB28200391A80 /* eventData.json in Resources */,
+				A6C8E8BA23ABB28200391A80 /* playerData.json in Resources */,
+				A6C8E8D223ABB28200391A80 /* allstargameData.json in Resources */,
+				A6C8E78D23ABAA1800391A80 /* Main.storyboard in Resources */,
+				A6C8E8DE23ABB28200391A80 /* matchData.json in Resources */,
+				A6C8E8F223ABB28200391A80 /* dayData.json in Resources */,
+				A6C8E8FA23ABB28200391A80 /* courtData.json in Resources */,
+				A6C8E8E623ABB28200391A80 /* stageData.json in Resources */,
+				A6C8E8B623ABB28200391A80 /* coachData.json in Resources */,
+				A6C8E8EA23ABB28200391A80 /* calendarData.json in Resources */,
+				A6C8E8E223ABB28200391A80 /* roundData.json in Resources */,
+				A6C8E8CA23ABB28200391A80 /* shirtsizeData.json in Resources */,
+				A6C8E8BE23ABB28200391A80 /* teamData.json in Resources */,
+				A6C8E8DA23ABB28200391A80 /* groupData.json in Resources */,
+				A6C8E8F623ABB28200391A80 /* rulebookData.json in Resources */,
+				A6C8E78A23ABAA1800391A80 /* Preview Assets.xcassets in Resources */,
+				A6C8E81423ABB27500391A80 /* Assets.xcassets in Resources */,
+				A6C8E8CE23ABB28200391A80 /* clubData.json in Resources */,
+				A6C8E78723ABAA1800391A80 /* Assets.xcassets in Resources */,
+				A6C8E90223ABB28200391A80 /* appData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C8E7AC23ABAA6600391A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C8E8C723ABB28200391A80 /* coulorData.json in Resources */,
+				A6C8E8D723ABB28200391A80 /* groupformatData.json in Resources */,
+				A6C8E8FF23ABB28200391A80 /* tournamentData.json in Resources */,
+				A6C8E8C323ABB28200391A80 /* cityData.json in Resources */,
+				A6C8E8EF23ABB28200391A80 /* eventData.json in Resources */,
+				A6C8E8BB23ABB28200391A80 /* playerData.json in Resources */,
+				A6C8E8D323ABB28200391A80 /* allstargameData.json in Resources */,
+				A6C8E7BD23ABAA6700391A80 /* LaunchScreen.storyboard in Resources */,
+				A6C8E8DF23ABB28200391A80 /* matchData.json in Resources */,
+				A6C8E8F323ABB28200391A80 /* dayData.json in Resources */,
+				A6C8E8FB23ABB28200391A80 /* courtData.json in Resources */,
+				A6C8E8E723ABB28200391A80 /* stageData.json in Resources */,
+				A6C8E8B723ABB28200391A80 /* coachData.json in Resources */,
+				A6C8E8EB23ABB28200391A80 /* calendarData.json in Resources */,
+				A6C8E8E323ABB28200391A80 /* roundData.json in Resources */,
+				A6C8E8CB23ABB28200391A80 /* shirtsizeData.json in Resources */,
+				A6C8E8BF23ABB28200391A80 /* teamData.json in Resources */,
+				A6C8E8DB23ABB28200391A80 /* groupData.json in Resources */,
+				A6C8E8F723ABB28200391A80 /* rulebookData.json in Resources */,
+				A6C8E7BA23ABAA6700391A80 /* Preview Assets.xcassets in Resources */,
+				A6C8E81523ABB27500391A80 /* Assets.xcassets in Resources */,
+				A6C8E8CF23ABB28200391A80 /* clubData.json in Resources */,
+				A6C8E7B723ABAA6700391A80 /* Assets.xcassets in Resources */,
+				A6C8E90323ABB28200391A80 /* appData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C8E7CC23ABB13800391A80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C8E8C423ABB28200391A80 /* coulorData.json in Resources */,
+				A6C8E8D423ABB28200391A80 /* groupformatData.json in Resources */,
+				A6C8E8FC23ABB28200391A80 /* tournamentData.json in Resources */,
+				A6C8E8C023ABB28200391A80 /* cityData.json in Resources */,
+				A6C8E8EC23ABB28200391A80 /* eventData.json in Resources */,
+				A6C8E8B823ABB28200391A80 /* playerData.json in Resources */,
+				A6C8E8D023ABB28200391A80 /* allstargameData.json in Resources */,
+				A6C8E7DD23ABB13A00391A80 /* LaunchScreen.storyboard in Resources */,
+				A6C8E8DC23ABB28200391A80 /* matchData.json in Resources */,
+				A6C8E8F023ABB28200391A80 /* dayData.json in Resources */,
+				A610646223ACEE0A005E6FF0 /* GoogleService-Info.plist in Resources */,
+				A6C8E8F823ABB28200391A80 /* courtData.json in Resources */,
+				A6C8E8E423ABB28200391A80 /* stageData.json in Resources */,
+				A6C8E8B423ABB28200391A80 /* coachData.json in Resources */,
+				A6C8E8E823ABB28200391A80 /* calendarData.json in Resources */,
+				A6C8E8E023ABB28200391A80 /* roundData.json in Resources */,
+				A6C8E8C823ABB28200391A80 /* shirtsizeData.json in Resources */,
+				A6C8E8BC23ABB28200391A80 /* teamData.json in Resources */,
+				A6C8E8D823ABB28200391A80 /* groupData.json in Resources */,
+				A6C8E8F423ABB28200391A80 /* rulebookData.json in Resources */,
+				A6C8E7DA23ABB13A00391A80 /* Preview Assets.xcassets in Resources */,
+				A6C8E81223ABB27500391A80 /* Assets.xcassets in Resources */,
+				A6C8E8CC23ABB28200391A80 /* clubData.json in Resources */,
+				A6C8E7D723ABB13A00391A80 /* Assets.xcassets in Resources */,
+				A6C8E90023ABB28200391A80 /* appData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		222612936DA811043804E6B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ioniCup tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B2311138EEBFAEFEECC1090 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ioniCup iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AD8D33AD125228CFD73CDAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ioniCup macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7709452E01DC9E6B187B67C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ioniCup iOS/Pods-ioniCup iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ioniCup iOS/Pods-ioniCup iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ioniCup iOS/Pods-ioniCup iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D9DB74D143B5E6F0D9373C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ioniCup macOS/Pods-ioniCup macOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ioniCup macOS/Pods-ioniCup macOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ioniCup macOS/Pods-ioniCup macOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9440C433EA5F9CAE56A938BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ioniCup padOS/Pods-ioniCup padOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ioniCup padOS/Pods-ioniCup padOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ioniCup padOS/Pods-ioniCup padOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1795DDE04EB07222D7E0676 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ioniCup tvOS/Pods-ioniCup tvOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ioniCup tvOS/Pods-ioniCup tvOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ioniCup tvOS/Pods-ioniCup tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2176EE988DB5F134C08575D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ioniCup padOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6C8E76623ABAA0200391A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C8E82723ABB27500391A80 /* MatchLCard.swift in Sources */,
+				A6C8E88323ABB27600391A80 /* TeamDetail.swift in Sources */,
+				A6C8E85323ABB27600391A80 /* LeaderboardCard.swift in Sources */,
+				A61A708B23BD539A00B5781A /* JSONDecoder+decode.swift in Sources */,
+				A6C8E83F23ABB27500391A80 /* LivematchSnipView.swift in Sources */,
+				A6C8E89723ABB27600391A80 /* AntennaAnimation.swift in Sources */,
+				A6C8E85B23ABB27600391A80 /* LeaderboardLCard.swift in Sources */,
+				A6C8E84F23ABB27600391A80 /* AttachmentDetail.swift in Sources */,
+				A6C8E76F23ABAA0200391A80 /* ContentView.swift in Sources */,
+				A6C8E87F23ABB27600391A80 /* TeamLCard.swift in Sources */,
+				A6E6DE612414135600D154ED /* Team.swift in Sources */,
+				A69FE04E241128E000B1E292 /* Round.swift in Sources */,
+				A6C8E86F23ABB27600391A80 /* TeamMCard.swift in Sources */,
+				A6C8E87B23ABB27600391A80 /* TeamCollection.swift in Sources */,
+				A69C67D623C616EE00EA5EBC /* Collection.swift in Sources */,
+				A6C8E82323ABB27500391A80 /* Color+random.swift in Sources */,
+				A6861B6623B5388300A8E66F /* DB.swift in Sources */,
+				A6C8E84723ABB27600391A80 /* AttachmentCard.swift in Sources */,
+				A6C8E89323ABB27600391A80 /* PhotoCardView.swift in Sources */,
+				A6C8E85F23ABB27600391A80 /* LeaderboardCollection.swift in Sources */,
+				A6C8E76D23ABAA0200391A80 /* AppDelegate.swift in Sources */,
+				A6C8E83323ABB27500391A80 /* MatchTeamView.swift in Sources */,
+				A61A707923BD516E00B5781A /* CollectionLegacy.swift in Sources */,
+				A6C8E82B23ABB27500391A80 /* MatchSCard.swift in Sources */,
+				A6C8E82F23ABB27500391A80 /* CompletedmatchSnipView.swift in Sources */,
+				A6C8E87323ABB27600391A80 /* TeamSCard.swift in Sources */,
+				A610647E23B1190C005E6FF0 /* Stage.swift in Sources */,
+				A69FE049241128D300B1E292 /* Group.swift in Sources */,
+				A6C8E81B23ABB27500391A80 /* Match.swift in Sources */,
+				A610648123B11910005E6FF0 /* Tournament.swift in Sources */,
+				A6C8E83723ABB27500391A80 /* MatchDetail.swift in Sources */,
+				A6E6DE562413D97800D154ED /* DocumentModel+Colorable.swift in Sources */,
+				A6C8E85723ABB27600391A80 /* LeaderboardSnipView.swift in Sources */,
+				A610649B23B52772005E6FF0 /* AttachmentSnipView.swift in Sources */,
+				A6C8E83B23ABB27500391A80 /* MatchScoreView.swift in Sources */,
+				A6C8E88F23ABB27600391A80 /* PhotoSnipView.swift in Sources */,
+				A61A707E23BD517E00B5781A /* DocumentLegacy.swift in Sources */,
+				A69C67D223C5EF1300EA5EBC /* Document.swift in Sources */,
+				A6C8E87723ABB27600391A80 /* TeamSnipView.swift in Sources */,
+				A6C8E86323ABB27600391A80 /* LeaderboardDetail.swift in Sources */,
+				A6C8E84323ABB27500391A80 /* MatchCollection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C8E77C23ABAA1800391A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A610649C23B527A3005E6FF0 /* CompletedmatchSnipView.swift in Sources */,
+				A610648223B11910005E6FF0 /* Tournament.swift in Sources */,
+				A691843E24153A2500E20153 /* ImageOpener.swift in Sources */,
+				A6C8E90F23ABCD8B00391A80 /* TeamCollection.swift in Sources */,
+				A6C8E91823ABDF0A00391A80 /* ModalButton.swift in Sources */,
+				A610649D23B527A6005E6FF0 /* MatchTeamView.swift in Sources */,
+				A6C8E82823ABB27500391A80 /* MatchLCard.swift in Sources */,
+				A6C8E85423ABB27600391A80 /* LeaderboardCard.swift in Sources */,
+				A610647923B0DD1A005E6FF0 /* NavigationButton.swift in Sources */,
+				A6C8E91F23AC005700391A80 /* HomeView.swift in Sources */,
+				A69FE04F241128E000B1E292 /* Round.swift in Sources */,
+				A610647F23B1190C005E6FF0 /* Stage.swift in Sources */,
+				A6C8E84023ABB27500391A80 /* LivematchSnipView.swift in Sources */,
+				A6C8E89823ABB27600391A80 /* AntennaAnimation.swift in Sources */,
+				A6C8E85C23ABB27600391A80 /* LeaderboardLCard.swift in Sources */,
+				A6C8E91523ABD03F00391A80 /* MapView.swift in Sources */,
+				A6C8E91D23ABF5DB00391A80 /* MatchDetail.swift in Sources */,
+				A69FE0462411224600B1E292 /* GroupCard.swift in Sources */,
+				A6C8E85023ABB27600391A80 /* AttachmentDetail.swift in Sources */,
+				A69FE04A241128D300B1E292 /* Group.swift in Sources */,
+				A6E6DE622414135600D154ED /* Team.swift in Sources */,
+				A6E6DE5E2413EF2200D154ED /* TeamNav.swift in Sources */,
+				A6C8E78523ABAA1800391A80 /* ContentView.swift in Sources */,
+				A69C67D123C5EF0D00EA5EBC /* Document.swift in Sources */,
+				A69184492415D99900E20153 /* TeamLogoImage.swift in Sources */,
+				A6C8E88023ABB27600391A80 /* TeamLCard.swift in Sources */,
+				A61A707F23BD517E00B5781A /* DocumentLegacy.swift in Sources */,
+				A6E6DE6524142DA200D154ED /* TeamCard.swift in Sources */,
+				A61A6FC523BA8B7000B5781A /* PalimpsestView.swift in Sources */,
+				A610647623B0DCD9005E6FF0 /* StageCard.swift in Sources */,
+				A61A708C23BD539A00B5781A /* JSONDecoder+decode.swift in Sources */,
+				A61064A123B527B3005E6FF0 /* AttachmentSnipView.swift in Sources */,
+				A6C8E87023ABB27600391A80 /* TeamMCard.swift in Sources */,
+				A6C8E82423ABB27500391A80 /* Color+random.swift in Sources */,
+				A6C8E84823ABB27600391A80 /* AttachmentCard.swift in Sources */,
+				A69C67D923C616F000EA5EBC /* Collection.swift in Sources */,
+				A69C680123C7685800EA5EBC /* ColorPanel.swift in Sources */,
+				A6861B6723B5388300A8E66F /* DB.swift in Sources */,
+				A6E6DE672414316E00D154ED /* TeamDetailEditing.swift in Sources */,
+				A6E6DE682414339800D154ED /* TeamDetail.swift in Sources */,
+				A6C8E89423ABB27600391A80 /* PhotoCardView.swift in Sources */,
+				A6C8E78323ABAA1800391A80 /* AppDelegate.swift in Sources */,
+				A610649023B2662E005E6FF0 /* GroupNav.swift in Sources */,
+				A6C8E82C23ABB27500391A80 /* MatchSCard.swift in Sources */,
+				A6C8E87423ABB27600391A80 /* TeamSCard.swift in Sources */,
+				A61064A023B527B0005E6FF0 /* MatchScoreView.swift in Sources */,
+				A6C8E90D23ABCD7500391A80 /* LeaderboardCollection.swift in Sources */,
+				A61A707A23BD516E00B5781A /* CollectionLegacy.swift in Sources */,
+				A6C8E81C23ABB27500391A80 /* Match.swift in Sources */,
+				A6C8E91A23ABDF1A00391A80 /* ModalLayer.swift in Sources */,
+				A610648D23B15E5C005E6FF0 /* StageNav.swift in Sources */,
+				A69C645223BFCE3B00EA5EBC /* DetailWindowController.swift in Sources */,
+				A6E6DE5C2413EC4600D154ED /* TeamsView.swift in Sources */,
+				A6C8E91123ABCDF500391A80 /* PhotoSnipView.swift in Sources */,
+				A6C8E85823ABB27600391A80 /* LeaderboardSnipView.swift in Sources */,
+				A6C8E87823ABB27600391A80 /* TeamSnipView.swift in Sources */,
+				A610647123B0D666005E6FF0 /* Tab.swift in Sources */,
+				A6E6DE572413D97800D154ED /* DocumentModel+Colorable.swift in Sources */,
+				A610649E23B527AA005E6FF0 /* LeaderboardDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C8E7AA23ABAA6600391A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C8E87123ABB27600391A80 /* TeamMCard.swift in Sources */,
+				A6C8E84523ABB27600391A80 /* MatchCollection.swift in Sources */,
+				A61A708D23BD539A00B5781A /* JSONDecoder+decode.swift in Sources */,
+				A6C8E89923ABB27600391A80 /* AntennaAnimation.swift in Sources */,
+				A6C8E88523ABB27600391A80 /* TeamDetail.swift in Sources */,
+				A6C8E87D23ABB27600391A80 /* TeamCollection.swift in Sources */,
+				A69FE04B241128D300B1E292 /* Group.swift in Sources */,
+				A6C8E86123ABB27600391A80 /* LeaderboardCollection.swift in Sources */,
+				A69C67D823C616F000EA5EBC /* Collection.swift in Sources */,
+				A6C8E84123ABB27500391A80 /* LivematchSnipView.swift in Sources */,
+				A6C8E85923ABB27600391A80 /* LeaderboardSnipView.swift in Sources */,
+				A6C8E84923ABB27600391A80 /* AttachmentCard.swift in Sources */,
+				A6C8E82523ABB27500391A80 /* Color+random.swift in Sources */,
+				A6C8E87923ABB27600391A80 /* TeamSnipView.swift in Sources */,
+				A6C8E89523ABB27600391A80 /* PhotoCardView.swift in Sources */,
+				A6C8E82D23ABB27500391A80 /* MatchSCard.swift in Sources */,
+				A6C8E89123ABB27600391A80 /* PhotoSnipView.swift in Sources */,
+				A6C8E85523ABB27600391A80 /* LeaderboardCard.swift in Sources */,
+				A6C8E85123ABB27600391A80 /* AttachmentDetail.swift in Sources */,
+				A6C8E7B123ABAA6600391A80 /* AppDelegate.swift in Sources */,
+				A6C8E83923ABB27500391A80 /* MatchDetail.swift in Sources */,
+				A6C8E86523ABB27600391A80 /* LeaderboardDetail.swift in Sources */,
+				A61A708023BD517E00B5781A /* DocumentLegacy.swift in Sources */,
+				A61A707B23BD516E00B5781A /* CollectionLegacy.swift in Sources */,
+				A69C67D323C5EF1400EA5EBC /* Document.swift in Sources */,
+				A6C8E85D23ABB27600391A80 /* LeaderboardLCard.swift in Sources */,
+				A6C8E88123ABB27600391A80 /* TeamLCard.swift in Sources */,
+				A6C8E7B323ABAA6600391A80 /* SceneDelegate.swift in Sources */,
+				A6C8E83523ABB27500391A80 /* MatchTeamView.swift in Sources */,
+				A6C8E83123ABB27500391A80 /* CompletedmatchSnipView.swift in Sources */,
+				A6C8E83D23ABB27500391A80 /* MatchScoreView.swift in Sources */,
+				A610648023B1190D005E6FF0 /* Stage.swift in Sources */,
+				A610648323B11911005E6FF0 /* Tournament.swift in Sources */,
+				A6861B6823B5388300A8E66F /* DB.swift in Sources */,
+				A6C8E81D23ABB27500391A80 /* Match.swift in Sources */,
+				A6C8E84D23ABB27600391A80 /* AttachmentSnipView.swift in Sources */,
+				A6C8E87523ABB27600391A80 /* TeamSCard.swift in Sources */,
+				A6E6DE632414135600D154ED /* Team.swift in Sources */,
+				A6C8E82923ABB27500391A80 /* MatchLCard.swift in Sources */,
+				A6E6DE582413D97800D154ED /* DocumentModel+Colorable.swift in Sources */,
+				A69FE050241128E000B1E292 /* Round.swift in Sources */,
+				A6C8E7B523ABAA6600391A80 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6C8E7CA23ABB13800391A80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6C8E86E23ABB27600391A80 /* TeamMCard.swift in Sources */,
+				A6C8E84223ABB27500391A80 /* MatchCollection.swift in Sources */,
+				A6C8E89623ABB27600391A80 /* AntennaAnimation.swift in Sources */,
+				A6C8E88223ABB27600391A80 /* TeamDetail.swift in Sources */,
+				A69FE048241128D300B1E292 /* Group.swift in Sources */,
+				A6C8E87A23ABB27600391A80 /* TeamCollection.swift in Sources */,
+				A6C8E86623ABB27600391A80 /* MapView.swift in Sources */,
+				A6C8E85E23ABB27600391A80 /* LeaderboardCollection.swift in Sources */,
+				A61A707823BD516E00B5781A /* CollectionLegacy.swift in Sources */,
+				A69C67D023C5ED9A00EA5EBC /* Document.swift in Sources */,
+				A6C8E83E23ABB27500391A80 /* LivematchSnipView.swift in Sources */,
+				A6C8E85623ABB27600391A80 /* LeaderboardSnipView.swift in Sources */,
+				A6C8E84623ABB27600391A80 /* AttachmentCard.swift in Sources */,
+				A6C8E82223ABB27500391A80 /* Color+random.swift in Sources */,
+				A69FE04D241128E000B1E292 /* Round.swift in Sources */,
+				A6E6DE552413D97800D154ED /* DocumentModel+Colorable.swift in Sources */,
+				A6C8E87623ABB27600391A80 /* TeamSnipView.swift in Sources */,
+				A6C8E89223ABB27600391A80 /* PhotoCardView.swift in Sources */,
+				A6C8E82A23ABB27500391A80 /* MatchSCard.swift in Sources */,
+				A6C8E88E23ABB27600391A80 /* PhotoSnipView.swift in Sources */,
+				A6C8E88A23ABB27600391A80 /* ModalLayer.swift in Sources */,
+				A6C8E85223ABB27600391A80 /* LeaderboardCard.swift in Sources */,
+				A61A708A23BD539A00B5781A /* JSONDecoder+decode.swift in Sources */,
+				A6C8E84E23ABB27600391A80 /* AttachmentDetail.swift in Sources */,
+				A6C8E7D123ABB13800391A80 /* AppDelegate.swift in Sources */,
+				A6C8E83623ABB27500391A80 /* MatchDetail.swift in Sources */,
+				A6C8E86223ABB27600391A80 /* LeaderboardDetail.swift in Sources */,
+				A6C8E90623ABBB9700391A80 /* HomeView.swift in Sources */,
+				A6C8E85A23ABB27600391A80 /* LeaderboardLCard.swift in Sources */,
+				A6E6DE602414135600D154ED /* Team.swift in Sources */,
+				A6C8E87E23ABB27600391A80 /* TeamLCard.swift in Sources */,
+				A6C8E88623ABB27600391A80 /* ModalButton.swift in Sources */,
+				A6C8E7D323ABB13800391A80 /* SceneDelegate.swift in Sources */,
+				A6C8E83223ABB27500391A80 /* MatchTeamView.swift in Sources */,
+				A6C8E82E23ABB27500391A80 /* CompletedmatchSnipView.swift in Sources */,
+				A610647D23B118F5005E6FF0 /* Tournament.swift in Sources */,
+				A6C8E83A23ABB27500391A80 /* MatchScoreView.swift in Sources */,
+				A69C67D523C6159800EA5EBC /* Collection.swift in Sources */,
+				A6861B6523B5388300A8E66F /* DB.swift in Sources */,
+				A610647B23B1116C005E6FF0 /* Stage.swift in Sources */,
+				A6C8E81A23ABB27500391A80 /* Match.swift in Sources */,
+				A6C8E84A23ABB27600391A80 /* AttachmentSnipView.swift in Sources */,
+				A61A707D23BD517E00B5781A /* DocumentLegacy.swift in Sources */,
+				A6C8E87223ABB27600391A80 /* TeamSCard.swift in Sources */,
+				A6C8E82623ABB27500391A80 /* MatchLCard.swift in Sources */,
+				A6C8E7D523ABB13800391A80 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A6C8E77523ABAA0300391A80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6C8E77623ABAA0300391A80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A6C8E78B23ABAA1800391A80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6C8E78C23ABAA1800391A80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6C8E7BB23ABAA6700391A80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6C8E7BC23ABAA6700391A80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A6C8E7DB23ABB13A00391A80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6C8E7DC23ABB13A00391A80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6C8E70223ABA90E00391A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		A6C8E70323ABA90E00391A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+			};
+			name = Release;
+		};
+		A6C8E77A23ABAA0300391A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0C71250AFA6F32EA143D6C7 /* Pods-ioniCup tvOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"ioniCup tvOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UB6UMQ5PGD;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ioniCup tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorenzofiamingo.ioniCup-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Debug;
+		};
+		A6C8E77B23ABAA0300391A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 428577F913CBEFCE42B27E0A /* Pods-ioniCup tvOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"ioniCup tvOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UB6UMQ5PGD;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ioniCup tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorenzofiamingo.ioniCup-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6C8E79123ABAA1800391A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3B8D7CF50545BDFE5616FFD /* Pods-ioniCup macOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "ioniCup macOS/ioniCup_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"ioniCup macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UB6UMQ5PGD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ioniCup macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorenzofiamingo.ioniCup-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A6C8E79223ABAA1800391A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F07379946696E073BBAD196A /* Pods-ioniCup macOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "ioniCup macOS/ioniCup_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"ioniCup macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UB6UMQ5PGD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ioniCup macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorenzofiamingo.ioniCup-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A6C8E7C023ABAA6700391A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADF2E2698B089165B7F46E1 /* Pods-ioniCup padOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"ioniCup padOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UB6UMQ5PGD;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ioniCup padOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorenzofiamingo.ioniCup-padOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		A6C8E7C123ABAA6700391A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B04BCF0CAA1FD29569D573 /* Pods-ioniCup padOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"ioniCup padOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UB6UMQ5PGD;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ioniCup padOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorenzofiamingo.ioniCup-padOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6C8E7E023ABB13A00391A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05591D8D52E4EAFB575CD907 /* Pods-ioniCup iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "ioniCup iOS/ioniCup iOSDebug.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"ioniCup iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UB6UMQ5PGD;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ioniCup iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorenzofiamingo.ioniCup-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A6C8E7E123ABB13A00391A80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51973119C40A8CCA49018BBC /* Pods-ioniCup iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"ioniCup iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = UB6UMQ5PGD;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "ioniCup iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lorenzofiamingo.ioniCup-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6C8E70123ABA90E00391A80 /* Build configuration list for PBXProject "ioniCup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C8E70223ABA90E00391A80 /* Debug */,
+				A6C8E70323ABA90E00391A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6C8E77923ABAA0300391A80 /* Build configuration list for PBXNativeTarget "ioniCup tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C8E77A23ABAA0300391A80 /* Debug */,
+				A6C8E77B23ABAA0300391A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6C8E79023ABAA1800391A80 /* Build configuration list for PBXNativeTarget "ioniCup macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C8E79123ABAA1800391A80 /* Debug */,
+				A6C8E79223ABAA1800391A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6C8E7BF23ABAA6700391A80 /* Build configuration list for PBXNativeTarget "ioniCup padOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C8E7C023ABAA6700391A80 /* Debug */,
+				A6C8E7C123ABAA6700391A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6C8E7DF23ABB13A00391A80 /* Build configuration list for PBXNativeTarget "ioniCup iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C8E7E023ABB13A00391A80 /* Debug */,
+				A6C8E7E123ABB13A00391A80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A691843F2415D4D500E20153 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.10;
+			};
+		};
+		A691844C2419A87500E20153 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A69184402415D4D500E20153 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A691843F2415D4D500E20153 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		A69184422415D53E00E20153 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A691843F2415D4D500E20153 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		A69184442415D57800E20153 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A691843F2415D4D500E20153 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		A69184462415D58200E20153 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A691843F2415D4D500E20153 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		A691844D2419A87500E20153 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A691844C2419A87500E20153 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A6C8E6FE23ABA90E00391A80 /* Project object */;
+}

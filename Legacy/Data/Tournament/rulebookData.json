@@ -1,0 +1,12 @@
+[
+    {
+        "id": 0,
+        "title": "MyRules",
+        "rules": [
+            {
+                "title": "MyRule",
+                "body": "I love my rule"
+            }
+        ]
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "id": 0
+        "name": "Girone all'italiana",
+        "rulebookId": 100
+    },
+    {
+        "id": 1
+        "name": "Girone a eliminazione"
+        "rulebookId": 101
+    }
+]
