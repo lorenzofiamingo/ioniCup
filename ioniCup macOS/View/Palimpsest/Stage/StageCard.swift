@@ -33,9 +33,11 @@ struct StageCard: View {
     }
 }
 
-struct StageCard: View {
+struct ColorSquare: View {
     
-    @Binding var colorable: DB.Document<Model: Colorable>
+    typealias ColorableModel = Modelable & Codable & Colorable
+    
+    @Binding var colorable: DB.Document<ColorableModel>
     
     var body: some View {
         ZStack {
@@ -44,7 +46,7 @@ struct StageCard: View {
             RoundedRectangle(cornerRadius: 5, style: .continuous)
                 .aspectRatio(1, contentMode: .fit)
                 .foregroundColor(self.colorable.color.color)
-                .onLongPressGesture(perform: self.colorable.)
+                .onLongPressGesture(perform: self.colorable.showColorPanel)
         }
     }
 }
