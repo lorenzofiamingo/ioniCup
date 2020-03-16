@@ -1,5 +1,5 @@
 //
-//  GroupCard.swift
+//  GroupLink.swift
 //  ioniCup macOS
 //
 //  Created by Lorenzo Fiamingo on 05/03/2020.
@@ -8,12 +8,12 @@
 import SwiftUI
 import Ballcap
 
-struct GroupCard: View {
+struct GroupLink: View {
     
     @ObservedObject var group: DB.Group.Document
     
     var body: some View {
-        NavigationLink(destination: Text("CIAOOO").frame(maxWidth: .infinity, maxHeight: .infinity)) {
+        NavigationLink(destination: GroupDetail(group: group)) {
             HStack {
                 RoundedRectangle(cornerRadius: 5, style: .continuous)
                     .aspectRatio(1, contentMode: .fit)

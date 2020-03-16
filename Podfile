@@ -4,7 +4,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Analytics'
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
-pod 'Ballcap', :git => 'https://github.com/l99fiamingo/Ballcap-iOS'
+pod 'Ballcap', :git => 'https://github.com/lorenzofiamingo/Ballcap-iOS'
  
 target 'ioniCup iOS' do
     platform :ios, '13.0'

@@ -19,7 +19,7 @@ struct StageNav: View {
             VStack {
                 List {
                     ForEach(stageCollection.documents) { stage in
-                        StageCard(stage: stage)
+                        StageLink(stage: stage)
                             .padding(.vertical, 8)
                             .contextMenu {
                                 Button("􀎗 Modifica colore", action: stage.showColorPanel)

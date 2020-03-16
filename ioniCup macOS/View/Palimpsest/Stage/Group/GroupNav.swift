@@ -16,7 +16,7 @@ struct GroupNav: View {
             VStack {
                 List {
                     ForEach(groupCollection.documents) { group in
-                        GroupCard(group: group)
+                        GroupLink(group: group)
                             .padding(.vertical, 8)
                             .contextMenu {
                                 Button("􀎗 Modifica colore", action: group.showColorPanel)

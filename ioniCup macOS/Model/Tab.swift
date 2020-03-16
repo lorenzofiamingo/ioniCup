@@ -9,7 +9,7 @@ import SwiftUI
 
 class Tab: ObservableObject {
     
-    @Published var value: Int = 3
+    @Published var value: Int = 1
     
     var labels = ["􀇴", "Palinsesto", "Calendario", "Squadre", "Regolamento"]
 }

@@ -7,7 +7,7 @@
 		<key>ioniCup iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>65</integer>
+			<integer>68</integer>
 		</dict>
 		<key>ioniCup macOS.xcscheme_^#shared#^_</key>
 		<dict>
@@ -17,12 +17,12 @@
 		<key>ioniCup padOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>67</integer>
+			<integer>70</integer>
 		</dict>
 		<key>ioniCup tvOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>66</integer>
+			<integer>69</integer>
 		</dict>
 		<key>ioniCup watchOS (Complication).xcscheme_^#shared#^_</key>
 		<dict>

@@ -158,10 +158,11 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
-  - Ballcap (0.11.1):
+  - Ballcap (1.3.0):
     - Firebase
     - Firebase/Firestore
     - Firebase/Storage
+    - FirebaseFirestoreSwift
   - BoringSSL-GRPC (0.0.3):
     - BoringSSL-GRPC/Implementation (= 0.0.3)
     - BoringSSL-GRPC/Interface (= 0.0.3)
@@ -218,6 +219,8 @@ PODS:
     - "gRPC-C++ (= 0.0.9)"
     - leveldb-library (~> 1.22)
     - nanopb (~> 0.3.901)
+  - FirebaseFirestoreSwift (0.2):
+    - FirebaseFirestore (>= 1.6.1, ~> 1.6)
   - FirebaseInstanceID (4.2.8):
     - FirebaseCore (~> 6.5)
     - GoogleUtilities/Environment (~> 6.4)
@@ -279,7 +282,7 @@ PODS:
   - nanopb/encode (0.3.9011)
 
 DEPENDENCIES:
-  - Ballcap (from `https://github.com/l99fiamingo/Ballcap-iOS`)
+  - Ballcap (from `https://github.com/lorenzofiamingo/Ballcap-iOS`)
   - Firebase/Analytics
   - Firebase/Core
   - Firebase/Firestore
@@ -296,6 +299,7 @@ SPEC REPOS:
     - FirebaseCoreDiagnostics
     - FirebaseCoreDiagnosticsInterop
     - FirebaseFirestore
+    - FirebaseFirestoreSwift
     - FirebaseInstanceID
     - FirebaseStorage
     - GoogleAppMeasurement
@@ -310,16 +314,16 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Ballcap:
-    :git: https://github.com/l99fiamingo/Ballcap-iOS
+    :git: https://github.com/lorenzofiamingo/Ballcap-iOS
 
 CHECKOUT OPTIONS:
   Ballcap:
-    :commit: 4a40d3d18eceb96f5da03667bba1d1fc34acdccf
-    :git: https://github.com/l99fiamingo/Ballcap-iOS
+    :commit: d3271d7bf6255e521c9334321d0b23021e73bd5f
+    :git: https://github.com/lorenzofiamingo/Ballcap-iOS
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
-  Ballcap: 9bb24a063bba0dd4ed3376e06371bc196ef5f4b2
+  Ballcap: 214ab54f3516e0ef93b4074d6f69ddb5899e06c1
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   Firebase: 0219bb4782eb1406f1b9b0628a2e625484ce910d
   FirebaseAnalytics: f68b9f3f1241385129ae0a83b63627fc420c05e5
@@ -328,6 +332,7 @@ SPEC CHECKSUMS:
   FirebaseCoreDiagnostics: 511f4f3ed7d440bb69127e8b97c2bc8befae639e
   FirebaseCoreDiagnosticsInterop: e9b1b023157e3a2fc6418b5cb601e79b9af7b3a0
   FirebaseFirestore: 52120e2833f804a874ba1a9f59aab864a8ae2286
+  FirebaseFirestoreSwift: 0437bb10d83f8161a9131da1739998254c78fdf5
   FirebaseInstanceID: ce993a3c3670a8f5d47ce371ac5d143c560608c5
   FirebaseStorage: 93fe2f8190a01bfb2b2c4932df7d679744c4ef1d
   GoogleAppMeasurement: db118eb61a97dd8c4f7014e368d3c335cbbcf80a
@@ -340,6 +345,6 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
 
-PODFILE CHECKSUM: 6064787768630f1f413a69d740c9b2e4d93655d8
+PODFILE CHECKSUM: 8fd86a1fe51edf78d0fcfffe8dad438fe22e8796
 
 COCOAPODS: 1.8.4

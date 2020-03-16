@@ -16,7 +16,7 @@ struct TeamNav: View {
             VStack {
                 List {
                     ForEach(teamCollection.documents) { team in
-                        TeamCard(team: team)
+                        TeamLink(team: team)
                             .padding(.vertical, 8)
                             .contextMenu {
                                 Button("􀎗 Modifica colore", action: team.showColorPanel)
