@@ -14,6 +14,8 @@ struct TeamCard: View {
     
     @State var isSelected: Bool = false
     
+    @State private var showPopover: Bool = false
+    
     var onSelection: ((Bool) -> Void)? = nil
     
     var body: some View {
@@ -39,6 +41,11 @@ struct TeamCard: View {
                 self.isSelected.toggle()
                 onSelection(self.isSelected)
             }
+        }
+        .onLongPressGesture {
+            self.showPopover.toggle()
+        }.popover(isPresented: $showPopover) {
+            TeamDetailEditing(team: self.team).frame(idealWidth: 600)
         }
     }
 }

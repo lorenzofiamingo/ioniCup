@@ -16,6 +16,8 @@ struct TeamDetailEditing: View {
     
     @ObservedObject var team: DB.Team.Document
     
+    private let titleWidth: CGFloat = 100
+    
     var body: some View {
         ScrollView {
             Form {
@@ -23,7 +25,7 @@ struct TeamDetailEditing: View {
                     HStack {
                         Spacer()
                         Text("Logo:")
-                    }.frame(maxWidth: 150)
+                    }.frame(maxWidth: titleWidth)
                     TeamLogoImage(url: team[\.logoURL])
                         .padding()
                         .frame(width: 150, height: 150)
@@ -66,7 +68,7 @@ struct TeamDetailEditing: View {
                     HStack {
                         Spacer()
                         Text("Colore:")
-                    }.frame(maxWidth: 150)
+                    }.frame(maxWidth: titleWidth)
                     Rectangle()
                         .frame(width: 150, height: 20)
                         .border(Color.black.opacity(0.1), width: 0.5)
@@ -80,7 +82,7 @@ struct TeamDetailEditing: View {
                     HStack {
                         Spacer()
                         Text("Nome:")
-                    }.frame(maxWidth: 150)
+                    }.frame(maxWidth: titleWidth)
                     TextField("Nome", text: $team[\.name]) { self.team.update() }
                     Spacer()
                 }
@@ -88,7 +90,7 @@ struct TeamDetailEditing: View {
                     HStack {
                         Spacer()
                         Text("Nome breve:")
-                    }.frame(maxWidth: 150)
+                    }.frame(maxWidth: titleWidth)
                     TextField("Nome breve", text: $team[\.shortName]) { self.team.update() }
                     Spacer()
                 }
@@ -96,7 +98,7 @@ struct TeamDetailEditing: View {
                     HStack {
                         Spacer()
                         Text("Città:")
-                    }.frame(maxWidth: 150)
+                    }.frame(maxWidth: titleWidth)
                     TextField("Città", text: $team[\.city].name) {
                         self.getCoordinate(addressString: self.team[\.city].name) { (coordinate, error) in
                             self.team[\.city].coordinate = GeoPoint(latitude: min(max(coordinate.latitude, -90), 90),
@@ -112,11 +114,11 @@ struct TeamDetailEditing: View {
                     HStack {
                         Spacer()
                         Text("Giocatori:").padding(.top, 2.5)
-                    }.frame(maxWidth: 150)
+                    }.frame(maxWidth: titleWidth)
                     VStack {
                         ForEach(team[\.players].enumeratedArray(), id: \.offset) { (idx, player) in
                             HStack {
-                                    TextField("Nome", text: self.$team[\.players][idx].name) { self.team.update() }
+                                TextField("Nome", text: self.$team[\.players][idx].name) { self.team.update() }
                                     TextField("Cognome", text: self.$team[\.players][idx].surname) { self.team.update() }
                                 HStack {
                                     TextField("Numero", text: self.$team[\.players][idx].number) { self.team.update() }
@@ -140,7 +142,7 @@ struct TeamDetailEditing: View {
                     HStack {
                         Spacer()
                         Text("Istruttori:")
-                    }.frame(maxWidth: 150)
+                    }.frame(maxWidth: titleWidth)
                     VStack {
                         ForEach(team[\.coaches].enumeratedArray(), id: \.offset) { (idx, player) in
                             HStack {

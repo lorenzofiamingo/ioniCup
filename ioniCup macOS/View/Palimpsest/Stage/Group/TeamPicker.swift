@@ -32,7 +32,6 @@ struct TeamPicker: View {
                                     self.selectedTeams = self.selectedTeams.filter { $0 != team }
                                 }
                             }
-                            .aspectRatio(1, contentMode: .fit)
                         }
                     }
                 }
@@ -45,9 +44,9 @@ struct TeamPicker: View {
                 }
                 Button("Conferma") {
                     self.presentationMode.wrappedValue.dismiss()
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { // Previene che la view non sia ricaricata prima che la modal venga dismissata. (Probabile bug di SwiftUI)
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { // Previene che la view non sia ricaricata prima che la modal venga dismissata. (Probabile bug di SwiftUI)
                         self.onCommit(self.selectedTeams)
-                    }
+//                    }
                 }
             }.padding([.bottom, .horizontal], 8)
         }.frame(minWidth: 512, idealWidth: 768, minHeight: 144, idealHeight: 192, maxHeight: 384)

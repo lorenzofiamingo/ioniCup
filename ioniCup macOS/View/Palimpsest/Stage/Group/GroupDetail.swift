@@ -45,7 +45,7 @@ struct GroupDetail: View {
                 VStack {
                     HStack {
                         Button("Selezione le squadre") { self.showTeamPicker.toggle() }
-                            .sheet(isPresented: $showTeamPicker) {
+                            .popover(isPresented: $showTeamPicker) {
                                 TeamPicker(teamCollection: self.teamCollection, selectedTeams: self.selectedTeams) { selectedTeams in
                                     self.group[\.teamReferences] = selectedTeams.map { $0.documentReference }
                                     self.group.update()
