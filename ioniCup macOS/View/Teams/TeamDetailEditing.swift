@@ -11,7 +11,6 @@ import Ballcap
 import FirebaseStorage
 import FirebaseFirestore
 import CoreLocation
-// implementare traduzione di citta in coordinate tramite https://developer.apple.com/documentation/corelocation/converting_between_coordinates_and_user-friendly_place_names
 
 struct TeamDetailEditing: View {
     

@@ -12,7 +12,7 @@ struct TeamCard: View {
     
     @ObservedObject var team: DB.Team.Document
     
-    @State private var isSelected: Bool = false
+    @State var isSelected: Bool = false
     
     var onSelection: ((Bool) -> Void)? = nil
     
@@ -25,6 +25,7 @@ struct TeamCard: View {
                 .transition(.fade) // Fade Transition
                 .scaledToFit().padding(5)
                 .background(isSelected ? Color.gray.opacity(0.4).cornerRadius(5) : Color.gray.opacity(0).cornerRadius(0))
+            Spacer()
             Text(team[\.shortName])
                 .lineLimit(1)
                 .truncationMode(.middle).padding(2)

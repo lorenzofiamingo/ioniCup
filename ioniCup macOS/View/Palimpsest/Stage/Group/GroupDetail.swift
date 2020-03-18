@@ -12,38 +12,58 @@ struct GroupDetail: View {
     
     @ObservedObject var group: DB.Group.Document
     
-    @State var showTeamPicker: Bool = false
+    @State private var showTeamPicker: Bool = false
+    
+    @ObservedObject private var teamCollection: DB.Team.Collection
+    
+    //    @State var selectedTeam: [DB.Team.Document] = []
+    
+    //    @EnvironmentObject var tournaments: DB.Tournament.Collection
+    
+    init(group: DB.Group.Document) {
+        self.group = group
+        teamCollection = DB.Team.Collection(reference: group.documentReference.parent.parent!.parent.parent!.collection("teams"))
+    }
+    
+    var selectedTeams: [DB.Team.Document] {
+        teamCollection.documents.filter { group[\.teamReferences].contains($0.documentReference) }
+    }
     
     var body: some View {
         VSplitView {
-            ScrollView(.horizontal, showsIndicators: true) {
+            
+            ScrollView(.horizontal) {
+                HStack {
+                    ForEach(selectedTeams) { team in
+                        TeamCard(team: team)
+                            .aspectRatio(1, contentMode: .fill)
+                    }
+                }
+            }.frame(minHeight: 140, idealHeight: 150, maxHeight: 200)
+            
+            ScrollView {
                 VStack {
-                    Spacer()
                     HStack {
-                        Button(action: { self.showTeamPicker.toggle() }) {
-                            VStack {
-                                Text("􀏱")
-                                Text("Aggiungi")
-                                Text("squadra")
-                            }
-                                .padding()
-                                .font(.system(size: 16))
+                        Button("Selezione le squadre") { self.showTeamPicker.toggle() }
+                            .sheet(isPresented: $showTeamPicker) {
+                                TeamPicker(teamCollection: self.teamCollection, selectedTeams: self.selectedTeams) { selectedTeams in
+                                    self.group[\.teamReferences] = selectedTeams.map { $0.documentReference }
+                                    self.group.update()
+                                }
                         }
-                        .buttonStyle(BorderlessButtonStyle())
-                        .sheet(isPresented: $showTeamPicker) {
-                            TeamPicker(teamCollection: DB.Team.Collection(reference: Firestore.firestore()
-                            .collection("tournaments")
-                            .document("DbPGt9rk9xa1EZSC2j25").collection("teams")))
-                        }
+                        Spacer()
                     }
                     Spacer()
-                }
-            }.frame(minHeight: 140, maxHeight: 160)
-            Text("IMPOSTAZIONI")
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                }.padding()
+            }.frame(minHeight: 10)
+            
             Text("PARTITE")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-            
         }
     }
 }
+
+
+//
+//Prima di continuare rendi tournament un environment object
+//

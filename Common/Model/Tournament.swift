@@ -15,6 +15,8 @@ extension DB {
     struct Tournament {
         
         typealias Document = DB.Document<Tournament.Model>
+        
+        typealias Collection = DB.Collection<Document>
 
         struct Model: Codable, Modelable, Orderable {
             

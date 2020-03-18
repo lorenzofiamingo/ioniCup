@@ -6,6 +6,7 @@
 //
 
 import Ballcap
+import FirebaseFirestore
 
 extension DB {
     
@@ -27,6 +28,8 @@ extension DB {
             var order: Int = 0
             
             var color: Color = DB.Color()
+            
+            var teamReferences: [DocumentReference] = []
         }
     }
 }
