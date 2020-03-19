@@ -11,7 +11,7 @@ import Ballcap
 
 extension DB {
     
-    final class Collection<Document: Object & DataRepresentable & DataOrderable>: ObservableObject {
+    final class Collection<Document: Object & DataRepresentable & DataOrderable & DataListenable>: ObservableObject {
         
         @Published var source: DataSource<Document>
         
@@ -22,8 +22,9 @@ extension DB {
         init(reference: CollectionReference, option: DataSource<Document>.Option = .init()) {
             collectionReference = reference
             source = DataSource<Document>.Query(reference).order(by: "order").dataSource()
-            source.onChanged { (s, snapshot) in
+            source.onChanged { (_, snapshot) in
                 self.documents = snapshot.after.sorted(by: { $0[\.order] < $1[\.order] })
+                self.documents.forEach { $0.listen() }
             }.listen()
         }
     }

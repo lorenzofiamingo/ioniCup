@@ -17,7 +17,7 @@ struct StageNav: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Fasi").padding(.top).font(.subheadline)
+                Text("Fasi").padding(.top).font(.headline)
                 List {
                     ForEach(stageCollection.documents) { stage in
                         StageLink(stage: stage)
@@ -38,7 +38,7 @@ struct StageNav: View {
                     Spacer()
                 }
             }
-            .frame(minWidth: 200, idealWidth: 250, maxWidth: 300)
+            .frame(minWidth: 150, idealWidth: 175, maxWidth: 200)
             Text("Seleziona una fase")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }

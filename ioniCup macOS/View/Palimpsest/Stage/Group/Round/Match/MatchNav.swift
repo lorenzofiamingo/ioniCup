@@ -14,7 +14,7 @@ struct MatchNav: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Partite").padding(.top).font(.subheadline)
+                Text("Partite").padding(.top).font(.headline)
                 List {
                     ForEach(matchCollection.documents) { match in
                         MatchLink(match: match)
@@ -35,7 +35,7 @@ struct MatchNav: View {
                     Spacer()
                 }
             }
-            .frame(minWidth: 140, idealWidth: 180, maxWidth: 300)
+            .frame(minWidth: 150, idealWidth: 175, maxWidth: 200)
             Text("Seleziona una partita")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }

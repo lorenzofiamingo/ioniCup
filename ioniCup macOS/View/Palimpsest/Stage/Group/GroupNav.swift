@@ -14,7 +14,7 @@ struct GroupNav: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Gruppi").padding(.top).font(.subheadline)
+                Text("Gruppi").padding(.top).font(.headline)
                 List {
                     ForEach(groupCollection.documents) { group in
                         GroupLink(group: group)
@@ -35,7 +35,7 @@ struct GroupNav: View {
                     Spacer()
                 }
             }
-            .frame(minWidth: 140, idealWidth: 180, maxWidth: 300)
+            .frame(minWidth: 150, idealWidth: 175, maxWidth: 200)
             Text("Seleziona un girone")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }

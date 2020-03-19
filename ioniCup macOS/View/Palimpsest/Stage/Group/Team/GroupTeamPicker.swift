@@ -1,5 +1,5 @@
 //
-//  TeamPicker.swift
+//  GrroupTeamPicker.swift
 //  ioniCup macOS
 //
 //  Created by Lorenzo Fiamingo on 16/03/2020.
@@ -8,7 +8,7 @@
 import SwiftUI
 import FirebaseFirestore
 
-struct TeamPicker: View {
+struct GroupTeamPicker: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     

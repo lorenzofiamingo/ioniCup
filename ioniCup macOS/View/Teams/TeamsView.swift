@@ -10,12 +10,9 @@ import FirebaseFirestore
 import Ballcap
 
 struct TeamsView: View {
-    
-    @ObservedObject var tournament = DB.Tournament.Document(Firestore.firestore()
-        .collection("tournaments")
-        .document("DbPGt9rk9xa1EZSC2j25"))
+    @ObservedObject var tournament = DB.Tournament.Document(Firestore.firestore().collection("tournaments").document("DbPGt9rk9xa1EZSC2j25"))
     
     var body: some View {
-        TeamNav(teamCollection: DB.Team.Collection(reference: tournament.documentReference.collection("teams")))
+        TeamNavigation(teamCollection: DB.Team.Collection(reference: tournament.documentReference.collection("teams")))
     }
 }

@@ -37,6 +37,6 @@ struct TeamNav: View {
             .frame(minWidth: 200, idealWidth: 250, maxWidth: 300)
             Text("Seleziona una fase")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-            }
+        }
     }
 }

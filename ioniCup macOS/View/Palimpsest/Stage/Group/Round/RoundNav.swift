@@ -14,7 +14,7 @@ struct RoundNav: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Round").padding(.top).font(.subheadline)
+                Text("Round").padding(.top).font(.headline)
                 List {
                     ForEach(roundCollection.documents) { round in
                         RoundLink(round: round)
@@ -35,7 +35,7 @@ struct RoundNav: View {
                     Spacer()
                 }
             }
-            .frame(minWidth: 140, idealWidth: 180, maxWidth: 300)
+            .frame(minWidth: 150, idealWidth: 175, maxWidth: 200)
             Text("Seleziona un round")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }

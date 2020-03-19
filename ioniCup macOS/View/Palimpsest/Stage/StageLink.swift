@@ -15,14 +15,14 @@ struct StageLink: View {
     var body: some View {
         NavigationLink(destination: GroupNav(groupCollection: DB.Group.Collection(reference: stage.documentReference.collection("groups")))) {
             HStack {
-                ZStack {
-                    Text("􀎑")
-                        .opacity(0.28)
-                    RoundedRectangle(cornerRadius: 5, style: .continuous)
-                        .aspectRatio(1, contentMode: .fit)
-                        .foregroundColor(self.stage[\.color].color)
-                        .onLongPressGesture(perform: self.stage.showColorPanel)
-                }
+//                ZStack {
+//                    Text("􀎑")
+//                        .opacity(0.28)
+//                    RoundedRectangle(cornerRadius: 5, style: .continuous)
+//                        .aspectRatio(1, contentMode: .fit)
+//                        .foregroundColor(self.stage[\.color].color)
+//                        .onLongPressGesture(perform: self.stage.showColorPanel)
+//                }
                 TextField("Fase", text: self.$stage[\.name], onCommit: { self.stage.update() })
                     .foregroundColor(.black)
                     .font(.system(.subheadline, design: .rounded))

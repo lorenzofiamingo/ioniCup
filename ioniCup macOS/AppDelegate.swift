@@ -24,10 +24,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         FirebaseApp.configure()
         
-        var tournaments: DB.Tournament.Collection = DB.Tournament.Collection(reference: Firestore.firestore().collection("tournaments"))
+//        var tournaments: DB.Tournament.Collection = DB.Tournament.Collection(reference: Firestore.firestore().collection("tournaments"))
         
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView().environmentObject(tab).environmentObject(tournaments)
+        let contentView = ContentView().environmentObject(tab)//.environmentObject(tournaments)
         
         // Create the window and set the content view. 
         window = NSWindow(

@@ -32,17 +32,17 @@ struct GroupDetail: View {
                 HStack {
                     ForEach(selectedTeams) { team in
                         TeamCard(team: team)
-                            .aspectRatio(1, contentMode: .fill)
+                            .aspectRatio(1, contentMode: .fit)
                     }
                 }
             }.frame(minHeight: 140, maxHeight: 200)
             
-            ScrollView {
+            ScrollView(.horizontal) {
                 VStack {
                     HStack {
-                        Button("Selezione le squadre") { self.showTeamPicker.toggle() }
+                        Button("Seleziona le squadre") { self.showTeamPicker.toggle() }
                             .popover(isPresented: $showTeamPicker) {
-                                TeamPicker(teamCollection: self.teamCollection, selectedTeams: self.selectedTeams) { selectedTeams in
+                                GroupTeamPicker(teamCollection: self.teamCollection, selectedTeams: self.selectedTeams) { selectedTeams in
                                     self.group[\.teamReferences] = selectedTeams.map { $0.documentReference }
                                     self.group.update()
                                 }
@@ -50,7 +50,7 @@ struct GroupDetail: View {
                         Spacer()
                     }
                 }.padding()
-            }.frame(minHeight: 10, maxHeight: 100)
+            }.frame(height: 50)
             
             RoundNav(roundCollection: DB.Round.Collection(reference: group.documentReference.collection("rounds"))).frame(minHeight: 10)
         }

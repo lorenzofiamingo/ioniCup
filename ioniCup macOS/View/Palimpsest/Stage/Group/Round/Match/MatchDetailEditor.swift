@@ -15,6 +15,15 @@ struct MatchDetailEditor: View {
     
     var status = ["Inizializzata", "Designata", "Live", "Terminata"]
     
+    @ObservedObject private var teamCollection: DB.Team.Collection
+    
+    var teamA: DB.Team.Document? {
+        teamCollection.documents.filter { match[\.teamAReference] == $0.documentReference }.first
+    }
+    var teamB: DB.Team.Document? {
+        teamCollection.documents.filter { match[\.teamBReference] == $0.documentReference }.first
+    }
+    
     var selectedStrength: Binding<Int> {
         Binding<Int>(get: {
             self.match[\.status].isOver == true ? 3 : self.match[\.status].isLive == true ? 2 : self.match[\.status].isAppointed == true ? 1 : 0
@@ -45,8 +54,27 @@ struct MatchDetailEditor: View {
         })
     }
     
+    init(match: DB.Match.Document) {
+        self.match = match
+        teamCollection = DB.Team.Collection(reference: match.documentReference.parent.parent!.parent.parent!.parent.parent!.parent.parent!.collection("teams"))
+    }
+    
     var body: some View {
-            ScrollView {
+        ScrollView {
+            VStack {
+                HStack {
+                    Button("Seleziona") {}
+                    if teamA != nil {
+                        TeamCard(team: teamA!)
+                            .aspectRatio(1, contentMode: .fit)
+                    }
+                    Text("􀅽")
+                    if teamB != nil {
+                        TeamCard(team: teamB!)
+                            .aspectRatio(1, contentMode: .fit)
+                    }
+                    Button("Seleziona") {}
+                }.frame(maxHeight: 200)
                 HStack {
                     HStack {
                         Spacer()
@@ -58,13 +86,10 @@ struct MatchDetailEditor: View {
                         }
                     }
                 }
-                Text("appointed: " + (match[\.status].isAppointed ? "true" : "false"))
-                Text("live: " + (match[\.status].isLive ? "true" : "false"))
-                Text("over: " + (match[\.status].isOver ? "true" : "false"))
-                Spacer()
             }
             .padding()
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+        .frame(minWidth: 500, maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
