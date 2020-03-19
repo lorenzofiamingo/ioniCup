@@ -8,6 +8,7 @@
 import Cocoa
 import SwiftUI
 import Firebase
+import Combine
 
 
 
@@ -23,7 +24,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         FirebaseApp.configure()
         
-        let tournaments: DB.Tournament.Collection = DB.Tournament.Collection(reference: Firestore.firestore().collection("tournaments"))
+        var tournaments: DB.Tournament.Collection = DB.Tournament.Collection(reference: Firestore.firestore().collection("tournaments"))
         
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView().environmentObject(tab).environmentObject(tournaments)
@@ -63,11 +64,9 @@ extension AppDelegate: NSToolbarDelegate {
         
         let segmentedControl = NSSegmentedControl(labels: tab.labels, trackingMode: .selectOne, target: self, action: #selector(action(_:)))
         segmentedControl.selectedSegment = tab.value
-        segmentedControl.setWidth(90, forSegment: 0)
-        segmentedControl.setWidth(90, forSegment: 1)
-        segmentedControl.setWidth(90, forSegment: 2)
-        segmentedControl.setWidth(90, forSegment: 3)
-        segmentedControl.setWidth(90, forSegment: 4)
+        for n in 0..<tab.labels.count {
+            segmentedControl.setWidth(90, forSegment: n)
+        }
         
         let segmentedItem = NSToolbarItem()
         segmentedItem.view = segmentedControl
@@ -78,11 +77,13 @@ extension AppDelegate: NSToolbarDelegate {
     }
     
     @objc func action(_ sender: NSSegmentedControl) {
-        tab.value = sender.selectedSegment
+        if tab.value != sender.selectedSegment {
+            tab.value = sender.selectedSegment
+        }
     }
     
     func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [NSToolbarItem.Identifier(rawValue: "subreddit.search")]
+        return [NSToolbarItem.Identifier(rawValue: "centered")]
     }
 
     func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {

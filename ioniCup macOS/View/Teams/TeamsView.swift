@@ -17,7 +17,5 @@ struct TeamsView: View {
     
     var body: some View {
         TeamNav(teamCollection: DB.Team.Collection(reference: tournament.documentReference.collection("teams")))
-            .onAppear{ self.tournament.listen() }
-            .onDisappear(perform: tournament.listener?.remove)
     }
 }

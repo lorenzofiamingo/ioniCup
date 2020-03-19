@@ -12,7 +12,7 @@ struct TeamLink: View {
     @ObservedObject var team: DB.Team.Document
     
     var body: some View {
-        NavigationLink(destination: TeamDetailEditing(team: team)) {
+        NavigationLink(destination: TeamDetailEditor(team: team)) {
             HStack {
                 TeamLogoImage(url: self.team[\.logoURL]).frame(width: 40, height: 40)
                 TextField("Squadra", text: self.$team[\.shortName], onCommit: { self.team.update() })
@@ -20,8 +20,6 @@ struct TeamLink: View {
                     .font(.system(.subheadline, design: .rounded))
             }
         }
-        .onAppear { self.team.listen() }
-        .onDisappear { self.team.listener?.remove() }
     }
 }
 

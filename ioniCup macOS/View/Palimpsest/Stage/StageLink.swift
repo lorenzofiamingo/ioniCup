@@ -28,8 +28,6 @@ struct StageLink: View {
                     .font(.system(.subheadline, design: .rounded))
             }
         }
-        .onAppear { self.stage.listen() }
-        .onDisappear { self.stage.listener?.remove() }
     }
 }
 

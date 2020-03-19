@@ -16,10 +16,6 @@ struct GroupDetail: View {
     
     @ObservedObject private var teamCollection: DB.Team.Collection
     
-    //    @State var selectedTeam: [DB.Team.Document] = []
-    
-    //    @EnvironmentObject var tournaments: DB.Tournament.Collection
-    
     init(group: DB.Group.Document) {
         self.group = group
         teamCollection = DB.Team.Collection(reference: group.documentReference.parent.parent!.parent.parent!.collection("teams"))
@@ -39,7 +35,7 @@ struct GroupDetail: View {
                             .aspectRatio(1, contentMode: .fill)
                     }
                 }
-            }.frame(minHeight: 140, idealHeight: 150, maxHeight: 200)
+            }.frame(minHeight: 140, maxHeight: 200)
             
             ScrollView {
                 VStack {
@@ -53,12 +49,10 @@ struct GroupDetail: View {
                         }
                         Spacer()
                     }
-                    Spacer()
                 }.padding()
-            }.frame(minHeight: 10)
+            }.frame(minHeight: 10, maxHeight: 100)
             
-            Text("PARTITE")
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            RoundNav(roundCollection: DB.Round.Collection(reference: group.documentReference.collection("rounds"))).frame(minHeight: 10)
         }
     }
 }

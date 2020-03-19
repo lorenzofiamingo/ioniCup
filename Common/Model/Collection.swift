@@ -21,8 +21,8 @@ extension DB {
         
         init(reference: CollectionReference, option: DataSource<Document>.Option = .init()) {
             collectionReference = reference
-            source = DataSource<Document>.Query(reference).dataSource().sorted(by: { $0[\.order] < $1[\.order] })
-            source.onChanged { (_, snapshot) in
+            source = DataSource<Document>.Query(reference).order(by: "order").dataSource()
+            source.onChanged { (s, snapshot) in
                 self.documents = snapshot.after.sorted(by: { $0[\.order] < $1[\.order] })
             }.listen()
         }

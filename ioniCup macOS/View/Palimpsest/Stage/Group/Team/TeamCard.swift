@@ -45,7 +45,7 @@ struct TeamCard: View {
         .onLongPressGesture {
             self.showPopover.toggle()
         }.popover(isPresented: $showPopover) {
-            TeamDetailEditing(team: self.team).frame(idealWidth: 600)
+            TeamDetailEditor(team: self.team).frame(idealWidth: 600)
         }
     }
 }

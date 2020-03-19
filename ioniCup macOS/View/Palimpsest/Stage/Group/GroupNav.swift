@@ -14,6 +14,7 @@ struct GroupNav: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("Gruppi").padding(.top).font(.subheadline)
                 List {
                     ForEach(groupCollection.documents) { group in
                         GroupLink(group: group)

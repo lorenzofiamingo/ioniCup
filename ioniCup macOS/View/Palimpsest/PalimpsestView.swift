@@ -17,8 +17,6 @@ struct PalimpsestView: View {
     
     var body: some View {
         StageNav(stageCollection: DB.Stage.Collection(reference: tournament.documentReference.collection("stages")))
-            .onAppear{ self.tournament.listen() }
-            .onDisappear(perform: tournament.listener?.remove)
     }
 }
 

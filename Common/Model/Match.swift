@@ -1,93 +1,72 @@
 //
 //  Match.swift
-//  ioniCup
+//  ioniCup macOS
 //
-//  Created by Lorenzo Fiamingo on 15/12/2019.
-//  Copyright © 2019 Lorenzo Fiamingo. All rights reserved.
+//  Created by Lorenzo Fiamingo on 18/03/2020.
 //
 
-import SwiftUI
-import Combine
+import Ballcap
 import FirebaseFirestore
 
-final class Match: ObservableObject {
+extension DB {
     
-    private var matchReference: DocumentReference
-    
-    private var listener: ListenerRegistration?
-    
-    @Published var model = Model()
-    
-    func startListening() {
-        listener = matchReference
-            .addSnapshotListener { documentSnapshot, error in
-                guard let document = documentSnapshot else {
-                    print("Error fetching document: \(error!)")
-                    return
-                }
-                guard let dict = document.data() else {
-                    print("Document data was empty.")
-                    return
-                }
-                print("Current data: \(dict)")
-                let data = try! JSONSerialization.data(withJSONObject: dict, options: [])
-                self.model = try! JSONDecoder().decode(Model.self, from: data)
+    struct Match {
+        
+        typealias Document = DB.Document<Match.Model>
+        
+        typealias Collection = DB.Collection<Document>
+        
+        struct Model: Codable, Modelable, Orderable, Colorable {
+            
+            static func == (lhs: DB.Match.Model, rhs: DB.Match.Model) -> Bool {
+                lhs.name == rhs.name && lhs.order == rhs.order
+            }
+            
+            var name: String = ""
+            
+            var order: Int = 0
+            
+            var court: String = ""
+            
+            var color: Color = DB.Color()
+            
+            var teamAReference: DocumentReference = DB.Team.Document().documentReference
+            
+            var teamBReference: DocumentReference = DB.Team.Document().documentReference
+            
+            var status: Status = Status()
+            
+            var scoreBoard: ScoreBoard = ScoreBoard()
         }
-    }
-    
-    func stopListening() {
-        listener?.remove()
-    }
-    
-    init(matchReference: DocumentReference) {
-        self.matchReference = matchReference
     }
 }
 
-extension Match {
+extension DB.Match.Model {
     
-    struct Model: Codable {
+    struct Status: Codable {
         
+        var isAppointed: Bool = false
+
         var isLive: Bool = false
         
         var isOver: Bool = false
+    }
+    
+    struct ScoreBoard: Codable {
         
-        var teamA: String = ""
+        var stopWatch: Stopwatch = Stopwatch()
         
-        var teamB: String = ""
+        var currentPeriod: Int = 0
         
-        var court: String = ""
+        var periods: [Period] = []
         
-        var period: String = ""
-        
-        var players: Players = Players()
-        
-        var points: Points = Points()
-        
-        var round: String = ""
-        
-        var group: String = ""
-        
-        var score: Score = Score()
-        
-        var time: String = ""
-        
-        var stopwatch: Stopwatch = Stopwatch()
-        
-        var colors: Colors = Colors()
+        var total: Score = Score()
     }
 }
 
-extension Match.Model {
+extension DB.Match.Model.ScoreBoard {
     
-    struct Players: Codable {
-        
-        var teamA: [Player] = []
-        
-        var teamB: [Player] = []
-    }
-    
-    struct Points: Codable {
+    struct Point: Codable {
         
         var teamA: String = ""
         
@@ -96,9 +75,9 @@ extension Match.Model {
     
     struct Score: Codable {
         
-        var teamA: String = ""
+        var effective: Point = Point()
         
-        var teamB: String = ""
+        var basket: Point = Point()
     }
     
     struct Stopwatch: Codable {
@@ -108,68 +87,12 @@ extension Match.Model {
         var minutes: String = ""
     }
     
-    struct Colors: Codable {
-        
-        var teamA: Color = Color()
-        
-        var teamB: Color = Color()
-    }
-}
-
-extension Match.Model.Players {
-    
-    struct Player: Codable {
+    struct Period: Codable, Orderable {
         
         var name: String = ""
         
-        var surname: String = ""
+        var order: Int = 0
         
-        var number: String = ""
-    }
-}
-
-extension Match.Model.Colors {
-    
-    struct Color: Codable {
-        
-        var red: Double = 0
-        
-        var green: Double = 0
-        
-        var blue: Double = 0
-        
-        var color: SwiftUI.Color {
-            SwiftUI.Color(red: red, green: green, blue: blue)
-        }
-    }
-}
-
-extension Match.Model.Score {
-    
-    struct Partials: Codable {
-        
-        var first: Partial = Partial()
-        
-        var second: Partial = Partial()
-        
-        var third: Partial = Partial()
-        
-        var fourth: Partial = Partial()
-        
-        var fifth: Partial = Partial()
-        
-        var sixth: Partial = Partial()
-        
-        var overtime: Partial = Partial()
-    }
-}
-
-extension Match.Model.Score.Partials {
-    
-    struct Partial: Codable {
-        
-        var teamA: String = ""
-        
-        var teamB: String = ""
+        var score: Score = Score()
     }
 }
